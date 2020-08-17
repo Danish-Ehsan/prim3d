@@ -1,0 +1,181 @@
+/*
+Style sheet for ACF block "Static Image with Text"
+*/
+/* 
+    Created on : 14-Aug-2020, 8:43:09 PM
+    Author     : Danish
+*/
+
+.custom-accordion-image {
+	margin: 40px 0;
+}
+
+.custom-accordion-image__top-panel {
+	background-color: #770524;
+	color: white;
+	display: block;
+	align-items: stretch;
+	border-radius: 12px;
+	box-sizing: border-box;
+	width: 100%;
+	height: 325px;
+	position: relative;
+	min-width: 1024px;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+	transition: all 0.75s ease;
+}
+
+.custom-accordion-image__image-cont {
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	background-size: cover;
+	background-position: 50% 50%;
+	border-radius: 10px 0 0 10px;
+	overflow: hidden;
+	transition: all 0.5s ease;
+}
+
+.custom-accordion-image__header-cont {
+	width: 100%;
+	height: 75px;
+	display: inline-block;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-color: #770524;
+	font-size: 16px;
+	border-radius: 0 10px 10px 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	right: 0;
+	transition: all 0.5s ease;
+}
+
+.custom-accordion-image__header {
+	display: block;
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 30px;
+	text-align: center;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+
+
+
+.custom-accordion-image.closed .custom-accordion-image__top-panel {
+	height: 225px;
+}
+
+.custom-accordion-image.closed .custom-accordion-image__image-cont {
+	width: 50%;
+}
+
+.custom-accordion-image.closed .custom-accordion-image__header-cont {
+	height: 225px;
+	width: 50%;
+}
+
+.custom-accordion-image:hover .custom-accordion-image__image-cont,
+.custom-accordion-image:focus-within .custom-accordion-image__image-cont {
+	width: 100%;
+}
+
+.custom-accordion-image__top-panel:hover .custom-accordion-image__header-cont, 
+.custom-accordion-image__top-panel:focus-within .custom-accordion-image__header-cont {
+	width: 100%;
+}
+
+.custom-accordion-image.closed .custom-accordion-image__header { 
+	max-width: 225px;
+}
+
+.custom-accordion-image__top-panel:hover .custom-accordion-image__header,
+.custom-accordion-image__top-panel:focus-within .custom-accordion-image__header {
+	max-width: 800px;
+}
+
+
+
+
+
+
+
+.custom-accordion-image__expand-icon {
+	width: 40px;
+	height: 40px;
+	background-color: #fff;
+	border-radius: 50%;
+	display: flex;
+	position: absolute;
+	right: 15px;
+	bottom: 15px;
+	cursor: pointer;
+}
+
+.custom-accordion-image__expand-icon-bar {
+	background-color: #770524;
+	width: 17px;
+	height: 5px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+.custom-accordion-image__expand-icon-bar:first-of-type {
+	transform: translateY(-50%) rotate(0deg);
+	transform-origin: 50% 50%;
+	transition: transform 0.25s ease;
+}
+
+.custom-accordion-image.closed .custom-accordion-image__expand-icon-bar:first-of-type {
+	transform: translateY(-50%) rotate(-90deg);
+	transform-origin: 50% 50%;
+}
+
+.custom-accordion-image__copy-cont p {
+	margin: 0;
+	padding: 0;
+}
+
+.custom-accordion-image__slide-panel {
+	background-color: #fff;
+	background-image: url("../../images/accordion_background.png");
+	background-size: cover;
+	background-position: 50% 50%;
+	/*padding: 70px 100px;*/
+	padding: 0;
+	max-height: 750px;
+	overflow: scroll;
+	transition: max-height 0.75s ease;
+}
+
+
+.custom-accordion-image.closed .custom-accordion-image__slide-panel {
+	max-height: 0;
+}
+
+
+
+
+
+.custom-accordion-image__content-cont {
+	padding: 5px 50px;
+	margin: 70px 100px;
+	background-color: #fff;
+}
+
+.custom-accordion-image__content-cont * {
+	padding-left: 0;
+	padding-right: 0;
+}

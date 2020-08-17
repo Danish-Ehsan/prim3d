@@ -1,0 +1,86 @@
+/*
+Style sheet for ACF block "Custom Accordion"
+*/
+/* 
+    Created on : 15-Aug-2020, 2:13:45 AM
+    Author     : Danish
+*/
+
+.block-custom-accordion {
+	margin-bottom: 25px;
+}
+
+
+.block-custom-accordion__header-cont {
+	background-color: #770524;
+	text-align: center;
+	padding: 25px 20px;
+	border-radius: 10px 10px 0 0;
+	position: relative;
+	cursor: pointer;
+}
+
+.block-custom-accordion__header {
+	font-weight: 700;
+	font-size: 30px;
+	color: #fff;
+}
+
+.block-custom-accordion__expand-icon {
+	width: 40px;
+	height: 40px;
+	background-color: #fff;
+	border-radius: 50%;
+	display: flex;
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+
+.block-custom-accordion__expand-icon-bar {
+	background-color: #770524;
+	width: 17px;
+	height: 5px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+.block-custom-accordion__expand-icon-bar:first-of-type {
+	transform: translateY(-50%) rotate(0deg);
+	transform-origin: 50% 50%;
+	transition: transform 0.25s ease;
+}
+
+.block-custom-accordion.closed .block-custom-accordion__expand-icon-bar:first-of-type {
+	transform: translateY(-50%) rotate(-90deg);
+	transform-origin: 50% 50%;
+}
+
+
+.block-custom-accordion__content-cont {
+	background-color: #E3CCD4;
+	color: #000;
+	padding: 40px 40px;
+	border-radius: 0 0 10px 10px;
+	overflow: hidden;
+}
+
+.block-custom-accordion__content-cont:first-child {
+	margin-top: 0;
+}
+
+.block-custom-accordion__slide-panel {
+	max-height: 600px;
+	transition: max-height 0.75s ease;
+	overflow: scroll;
+}
+
+.block-custom-accordion.closed .block-custom-accordion__slide-panel {
+	max-height: 0;
+}
