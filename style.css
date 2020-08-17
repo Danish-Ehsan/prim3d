@@ -1383,6 +1383,7 @@ p {
 .home .site-main {
 	max-width: none;
 	text-align: center;
+	overflow: hidden;
 }
 
 .home h2 {
