@@ -1476,3 +1476,49 @@ p {
 .topics-carousel__title:hover, .topics-carousel__title:focus {
 	color: #E38224;
 }
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+## Page - Get Prim3d
+--------------------------------------------------------------*/
+
+.page__get-prim3d .wp-block-column:first-of-type p {
+	padding-right: 0;
+	margin-top: 0;
+}
+
+.page__get-prim3d .wp-block-column p:last-of-type {
+	margin-bottom: 10px;
+}
+
+.page__get-prim3d .wp-block-buttons {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.page__get-prim3d .wp-block-button {
+	display: block;
+	width: 265px;
+	margin: 0 auto;
+}
+
+.page__get-prim3d .wp-block-button a {
+	width: 100%;
+	box-sizing: content-box;
+	padding: 20px 0;
+}
+
+
+.page__get-prim3d .wp-block-button {
+	margin-bottom: 30px;
+}
