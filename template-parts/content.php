@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'post-cont' ); ?>>
 	<header class="content-header">
 		<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
 	</header><!-- .entry-header -->

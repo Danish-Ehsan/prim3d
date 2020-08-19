@@ -1329,6 +1329,19 @@ p {
 
 
 /*--------------------------------------------------------------
+## General
+--------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
 ## Page
 --------------------------------------------------------------*/
 
@@ -1522,4 +1535,37 @@ p {
 
 .page__get-prim3d .wp-block-button {
 	margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+## Archives
+--------------------------------------------------------------*/
+
+.archive .archive-header {
+	background-color: #E38224;
+	padding: 38px 100px;
+	color: #fff;
+	border-radius: 12px;
+	margin-bottom: 80px;
+}
+
+.archive .post-cont:after {
+	content: "";
+	display: block;
+	margin: 120px 0;
+	height: 4px;
+	background-color: #E38224;
+}
+
+.archive .post-cont:last-of-type:after {
+	content: none;
 }
