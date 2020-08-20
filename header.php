@@ -29,10 +29,14 @@
 		<div class="header__top-image" style="background-image: url(<?php echo get_template_directory_uri() . '/images/header_background.jpg'; ?>);"></div>
 		<div class="site-branding header__logo">
 			<?php the_custom_logo(); ?>
+			<button class="menu-toggle header__nav-btn" aria-controls="primary-menu" aria-expanded="false">
+				<div class="header__nav-btn-line"></div>
+				<div class="header__nav-btn-line"></div>
+				<div class="header__nav-btn-line"></div>
+			</button>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation header__nav">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'prim3d' ); ?></button>
 			<?php
 			wp_nav_menu(
 				array(
