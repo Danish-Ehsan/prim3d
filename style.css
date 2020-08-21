@@ -1896,8 +1896,12 @@ p {
 		width: 400px;
 	}
 	
+	.header__nav-btn {
+		top: 118px;
+	}
+	
 	/*--------------------------------------------------------------
-	### Front Page - Max 1024px
+	### Front Page - Max 800px
 	--------------------------------------------------------------*/
 	
 	.front-page__topics-cont {
@@ -1921,6 +1925,24 @@ p {
 
 @media screen and (max-width: 550px) { 
 
-	
+	html, body, .container, .main {
+		font-size: 16px;
+	}
+
+	h1, h2, h3, h4 {
+
+	}
+
+	h1 {
+		font-size: 20px;
+	}
+
+	h2 {
+		font-size: 20px;
+	}
+
+	h3 {
+		font-size: 16px;
+	}
 	
 }
