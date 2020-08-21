@@ -3,8 +3,15 @@
     $(".owl-carousel").owlCarousel({
         loop: false,
         dots: true,
-		margin: 20,
-		items: 2
+		items: 2,
+		responsive: {
+			550: {
+				margin: 20
+			},
+			1024: {
+				margin: 20
+			}
+		}
     });
 
 }( jQuery ));

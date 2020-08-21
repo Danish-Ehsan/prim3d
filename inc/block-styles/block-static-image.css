@@ -54,3 +54,16 @@ Style sheet for ACF block "Static Image with Text"
 }
 
 
+
+
+
+
+@media screen and (max-width: 1024px) {
+	
+	.block-static-image {
+		min-width: 0;
+		border-radius: 0;
+	}
+	
+}
+

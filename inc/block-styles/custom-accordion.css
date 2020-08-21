@@ -84,3 +84,16 @@ Style sheet for ACF block "Custom Accordion"
 .block-custom-accordion.closed .block-custom-accordion__slide-panel {
 	max-height: 0;
 }
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+	
+	.block-custom-accordion__header-cont {
+		border-radius: 0;
+	}
+	
+}
