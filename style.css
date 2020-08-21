@@ -1473,6 +1473,12 @@ p {
 	font-size: 36px;
 }
 
+
+
+
+
+
+
 .front-page__topics-carousel-cont {
 	max-width: 1024px;
 	margin: 0 auto;
@@ -1632,8 +1638,12 @@ p {
 --------------------------------------------------------------*/
 
 
-	@media screen and (max-width: 1024px) { 
+@media screen and (max-width: 1024px) { 
 
+	h1, h2 {
+		font-size: 33px;
+	}
+		
 	/*--------------------------------------------------------------
 	### Header - Max 1024px
 	--------------------------------------------------------------*/
@@ -1656,6 +1666,8 @@ p {
 	}
 
 	.header__logo {
+		margin: 80px 0 0 100px;
+		padding-bottom: 40px;
 	}
 
 	.header__logo img {
@@ -1678,7 +1690,7 @@ p {
 		font-size: 30px;
 		font-weight: 500;
 		background-image: linear-gradient(#770524, #c2501a);
-		padding: 20px 30px 40px 30px;
+		padding: 0 30px 40px 38px;
 	}
 
 	.header__menu-list li {
@@ -1802,7 +1814,63 @@ p {
 	### Front Page - Max 1024px
 	--------------------------------------------------------------*/
 	
+	.front-page__topics-cont {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.topics-carousel__item-cont {
+		width: 100%;
+	}
+	
+	.topics-carousel__copy-cont {
+		padding: 30px 50px;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*--------------------------------------------------------------
+	### Page - Max 1024px
+	--------------------------------------------------------------*/
+	
+	.page .site-main {
+		margin-top: 0;
+	}
+	
+	.page .content-header {
+		border-radius: 0;
+		padding: 33px 100px;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*--------------------------------------------------------------
+	### Page - Get Prim3d - Max 1024px
+	--------------------------------------------------------------*/
+	
+	.page__get-prim3d {
+		margin-bottom: 0;
+	}
+	
 }
+
+
 
 
 

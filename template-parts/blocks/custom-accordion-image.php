@@ -20,7 +20,7 @@ $image = get_field('main_image');
 $bck_image = get_field('background_image');
 
 ?>
-<div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?> closed js--custom-accordion-image">
+<div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?> js--custom-accordion-image">
 	<div class="custom-accordion-image__top-panel js--custom-accordion-image-top-panel">
 		<div class="custom-accordion-image__image-cont" style="background-image: url(<?php echo $image; ?>);">
 		</div>
