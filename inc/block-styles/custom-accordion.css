@@ -97,3 +97,16 @@ Style sheet for ACF block "Custom Accordion"
 	}
 	
 }
+
+
+@media screen and (max-width: 800px) { 
+	
+	.block-custom-accordion__header {
+		font-size: 26px;
+	}
+
+	.block-custom-accordion__content-cont {
+		padding: 40px 20px;
+	}
+
+}
