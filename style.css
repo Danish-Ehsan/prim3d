@@ -1004,6 +1004,8 @@ html, body, .container, .main {
     position: relative;
     box-sizing: border-box;
 	text-align: left;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
 }
 
 h1, h2, h3, h4 {
@@ -1246,6 +1248,68 @@ p {
 
 
 
+
+.header__search-btn {
+	width: 35px;
+	height: 35px;
+	border: none;
+	background-color: transparent;
+	background-image: url(images/search_icon.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	position: absolute;
+	right: 120px;
+	bottom: 35px;
+	cursor: pointer;
+}
+
+.header__search-field-cont {
+	display: none;
+	background-color: #F8D9BA;
+	height: 54px;
+	position: absolute;
+	right: 0;
+	top: 100%;
+	padding: 10px 60px 10px 20px;
+	border-left: 5px solid #EFC499;
+	border-radius: 0 0 0 10px;
+}
+
+.header__search-field-cont.expanded {
+	display: flex;
+	align-items: center;
+}
+
+.header__search-field-cont form {
+	display: flex;
+	align-items: center;
+}
+
+.header__search-field-cont input[type="search"] {
+	border-radius: 20px;
+	background-color: #EFC499;
+	border: 1px solid #D8B18A;
+	padding-left: 20px;
+	padding-right: 20px;
+	outline: none;
+	display: inline;
+}
+
+.header__search-field-cont input[type="submit"] {
+	padding: 5px;
+	width: 15px;
+	height: 25px;
+	margin-left: 5px;
+	display: inline;
+	border: none;
+	background-color: transparent;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-image: url(images/search-submit-icon.png);
+	cursor: pointer;
+}
 
 
 
@@ -1718,6 +1782,60 @@ p {
 .archive .post-cont:last-of-type:after {
 	content: none;
 }
+
+
+
+
+
+
+/*--------------------------------------------------------------
+## Search Page
+--------------------------------------------------------------*/
+
+.search-page .page-header {
+	background-color: #E38224;
+	padding: 38px 100px;
+	color: #fff;
+	border-radius: 12px;
+	margin-bottom: 40px;
+}
+
+.search-page .post-thumbnail {
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+.search-page .post-thumbnail img {
+	width: 500px;
+}
+
+.search-page article {
+	margin: 75px 0;
+}
+
+
+.search-page article:after {
+	content: "";
+	display: block;
+	margin: 80px auto;
+	height: 4px;
+	background-color: #E38224;
+	width: calc(100% - 200px);
+}
+
+.search-page article:last-of-type:after {
+	content: none;
+}
+
+.search-page article:last-of-type {
+	margin-bottom: 100px;
+}
+
+
+
+
+
+
 
 
 
