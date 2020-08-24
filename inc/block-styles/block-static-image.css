@@ -65,5 +65,49 @@ Style sheet for ACF block "Static Image with Text"
 		border-radius: 0;
 	}
 	
+	.block-static-image__image-cont {
+		border-radius: 0;
+	}
+	
+	.block-static-image__copy-cont {
+		border-radius: 0;
+	}
+	
 }
 
+
+
+
+@media screen and (max-width: 800px) {
+	
+	.block-static-image {
+		flex-wrap: wrap;
+		width: 90%;
+		margin: 40px auto;
+		border-radius: 10px;
+		overflow: hidden;
+	}
+	
+	.block-static-image__image-cont {
+		width: 100%;
+		height: 300px;
+	}
+	
+	.block-static-image__copy-cont {
+		width: 100%;
+	}
+	
+}
+
+
+
+
+@media screen and (max-width: 550px) {
+	
+	.block-static-image__image-cont {
+		width: 100%;
+		height: 280px;
+	}
+
+	
+}

@@ -1035,6 +1035,11 @@ a:visited {
 	margin: 0;
 }
 
+.site {
+	width: 100%;
+	position: relative;
+}
+
 .site-main {
 	max-width: 1024px;
 	margin: 80px auto;
@@ -1062,6 +1067,7 @@ p {
 .site-header {
 	background-color: #770524;
 	position: relative;
+	width: 100%;
 }
 
 .header__top-image {
@@ -1237,6 +1243,73 @@ p {
 	transform: rotate( -45deg ) translate(11px, -20px);
 }
 
+
+
+
+
+
+
+
+
+
+.header__privacy-policy {
+	display: none;
+	text-align: center;
+	text-decoration: none;
+	
+}
+
+.header__socials-cont {
+	height: 28px;
+	display: none;
+	justify-content: space-between;
+	width: 180px;
+	margin: 20px auto 40px auto;
+}
+
+.header__socials-cont img {
+	height: 28px;
+	width: 28px;
+}
+
+.header__social_icon {
+	display: inline-block;
+	height: 28px;
+	width: 32px;
+	padding: 0px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+
+
+.header__social_icon-fb {
+	background-image: url("images/footer_fb_icon.png");
+}
+
+.header__social_icon-tw {
+	background-image: url("images/footer_tw_icon.png");
+}
+
+.header__social_icon-insta {
+	background-image: url("images/footer_insta_icon.png");
+}
+
+.header__social_icon-yt {
+	background-image: url("images/footer_yt_icon.png");
+}
+
+
+
+.header__social_icon:nth-of-type(3) {
+	padding-right: 2px;
+	box-sizing: content-box;
+}
+
+.header__social_icon:last-of-type {
+	width: 35px;
+}
 
 
 
@@ -1465,6 +1538,11 @@ p {
 	text-align: center;
 }
 
+.home p {
+	max-width: 620px;
+	margin: 0 auto;
+}
+
 .home .content-cont {
 	width: 100%;
 }
@@ -1537,8 +1615,13 @@ p {
 	text-align: left;
 }
 
+.topics-carousel__copy-cont a {
+	color: #000;
+}
+
 .topics-carousel__copy-cont p {
 	padding: 0;
+	margin: 20px 0;
 }
 
 .topics-carousel__title {
@@ -1600,6 +1683,9 @@ p {
 	margin-bottom: 30px;
 }
 
+.wp-block-buttons .wp-block-button:last-child {
+	margin-right: auto;
+}
 
 
 
@@ -1651,22 +1737,18 @@ p {
 	/*--------------------------------------------------------------
 	### Header - Max 1024px
 	--------------------------------------------------------------*/
-
-	.site-header {
-		
-	}
 	
 	.header__nav {
-		position: relative;
+		position: absolute;
 		display: none;
 		z-index: 10;
+		top: 100%;
+		width: 100%;
+		background-image: linear-gradient(#770524, #c2501a);
 	}
 	
 	.header__nav.open {
 		display: block;
-	}
-
-	.header__top-image {
 	}
 
 	.header__logo {
@@ -1681,19 +1763,11 @@ p {
 	.header__nav-btn {
 		display: flex;
 	}
-	
-	.header__menu-cont {
-		position: absolute;
-		display: block;
-		width: 100%;
-		top: 0;
-	}
 
 	.header__menu-list {
 		display: block;
 		font-size: 30px;
 		font-weight: 500;
-		background-image: linear-gradient(#770524, #c2501a);
 		padding: 0 30px 40px 38px;
 	}
 
@@ -1706,11 +1780,6 @@ p {
 		height: 17px;
 		top: 1px;
 		left: 8px;
-	}
-
-
-	.header__menu-list a {
-		
 	}
 
 	.sub-menu {
@@ -1774,6 +1843,22 @@ p {
 		color: #E38224;
 	}
 	
+	
+	
+	
+	.header__privacy-policy {
+		display: block;
+		color: #fff;
+	}
+	
+	.header__privacy-policy:visited {
+		color: #fff;
+	}
+
+	.header__socials-cont {
+		display: flex;
+	}
+
 	
 	
 	
@@ -1886,7 +1971,6 @@ p {
 
 
 @media screen and (max-width: 800px) { 
-
 	
 	/*--------------------------------------------------------------
 	### Header - Max 800px
@@ -1900,6 +1984,9 @@ p {
 		top: 118px;
 	}
 	
+	
+	
+	
 	/*--------------------------------------------------------------
 	### Front Page - Max 800px
 	--------------------------------------------------------------*/
@@ -1911,7 +1998,7 @@ p {
 	.topics-carousel__item-cont {
 		width: 100%;
 	}
-
+	
 }
 
 
@@ -1930,19 +2017,225 @@ p {
 	}
 
 	h1, h2, h3, h4 {
-
+		text-align: center;
 	}
 
 	h1 {
 		font-size: 20px;
+		line-height: 30px;
 	}
 
 	h2 {
 		font-size: 20px;
+		line-height: 30px;
+		margin-bottom: 20px;
 	}
 
 	h3 {
 		font-size: 16px;
+	}
+	
+	.page .content-header {
+		padding: 10px 40px;
+	}
+	
+	p {
+		padding: 0 35px;
+	}
+	
+	.content-cont ul {
+		margin-left: 0;
+		padding: 0 50px 0 70px;
+	}
+	
+	.site-main {
+		margin-top: 0;
+	}
+	
+	
+	
+	
+	/*--------------------------------------------------------------
+	### Header - Max 550px
+	--------------------------------------------------------------*/
+	
+	.header__top-image {
+		height: 16px;
+	}
+	
+	.header__logo {
+		width: 100%;
+		padding: 20px 0 30px 40px;
+		margin: 0;
+	}
+	
+	.header__logo a img {
+		display: none;
+	}
+	
+	.header__logo a {
+		width: 55%;
+		height: 100px;
+		background-image: url(images/prim3d_logo_mobile.png);
+		background-size: contain;
+		background-position: 0% 50%;
+		background-repeat: no-repeat;
+	}
+	
+	
+	
+	
+	.header__nav-btn {
+		top: 54px;
+	}
+	
+	.header__menu-list {
+		padding: 20px;
+		padding-top: 0;
+	}
+	
+	.header__menu-list li {
+		padding-left: 0px;
+	}
+	
+	
+	
+	
+	
+	/*--------------------------------------------------------------
+	### Footer - Max 550px
+	--------------------------------------------------------------*/
+	
+	.site-footer {
+		padding: 50px 30px 60px 30px;
+	}
+	
+	.footer__top-row-cont {
+		padding-bottom: 15px;
+	}
+	
+	.footer__gmsh-logo {
+		width: 40%;
+	}
+	
+	.footer__bottom-row {
+		flex-wrap: wrap;
+	}
+	
+	.footer__bottom-row * {
+		width: 100%;
+	}
+	
+	.footer__privacy-link {
+		order: 1;
+		padding-bottom: 30px;
+	}
+	
+	.footer__copyright-info {
+		order: 2;
+	}
+	
+	
+	
+	
+	
+	/*--------------------------------------------------------------
+	### Front Page - Max 550px
+	--------------------------------------------------------------*/
+	
+	.home .content-cont {
+		margin-top: 40px;
+	}
+	
+	.home h2 {
+		margin-bottom: 30px;
+		font-size: 30px;
+		padding: 0 60px;
+		margin-bottom: 15px;
+	}
+	
+	.home p {
+		max-width: 420px;
+	}
+	
+	
+	
+	.front-page__topics-cont {
+		margin-top: 30px;
+		width: 90%;
+	}
+	
+	.front-page__topics-cont h2 {
+		font-size: 26px;
+	}
+	
+	.topics-carousel__item-cont {
+		width: 100%;
+		margin: 20px 0;
+	}
+	
+	.topics-carousel__copy-cont {
+		padding: 30px 35px;
+	}
+	
+	.topics-carousel__copy-cont p {
+		margin: 10px 0;
+	}
+	
+	
+	/*--------------------------------------------------------------
+	### Archives - Max 550px
+	--------------------------------------------------------------*/
+	
+	.archive .archive-header {
+		border-radius: 0;
+		margin-bottom: 50px;
+		padding: 10px 40px;
+	}
+	
+	
+	
+	/*--------------------------------------------------------------
+	### Single Post - Max 550px
+	--------------------------------------------------------------*/
+	
+	.single-prim3d_topics .site-main {
+		margin-top: 30px;
+	}
+	
+	/*--------------------------------------------------------------
+	### Page - Resources - Max 800px
+	--------------------------------------------------------------*/
+
+	.page-id-26 .site-main {
+		margin-bottom: 20px;
+	}
+	
+	.page-id-26 .content-header {
+		margin-bottom: 0;
+	}
+	
+	.page-id-26 .content-cont figure {
+		margin-top: 0;
+	}
+	
+	
+	
+	
+	/*--------------------------------------------------------------
+	### Page - Get Prim3d - Max 800px
+	--------------------------------------------------------------*/
+	
+	.page__get-prim3d .wp-block-column:first-of-type p {
+		padding-right: 35px;
+	}
+	
+	.page__get-prim3d .wp-block-buttons {
+		margin-top: 10px;
+	}
+	
+	.page__get-prim3d .wp-block-button {
+		margin-bottom: 20px;
 	}
 	
 }

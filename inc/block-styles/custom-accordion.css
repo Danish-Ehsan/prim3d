@@ -110,3 +110,34 @@ Style sheet for ACF block "Custom Accordion"
 	}
 
 }
+
+
+@media screen and (max-width: 550px) { 
+	
+	.block-custom-accordion__header {
+		font-size: 18px;
+	}
+	
+	.block-custom-accordion__content-cont {
+		padding: 20px 0;
+	}
+	
+	.block-custom-accordion__header-cont {
+		padding: 25px 40px;
+	}
+	
+	
+	
+	.block-custom-accordion__expand-icon {
+		width: 25px;
+		height: 25px;
+		padding: 0;
+		bottom: 7px;
+		right: 12px;
+	}
+	
+	.block-custom-accordion__expand-icon-bar {
+		height: 4px;
+	}
+
+}

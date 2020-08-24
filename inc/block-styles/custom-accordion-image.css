@@ -266,7 +266,72 @@ Style sheet for ACF block "Static Image with Text"
 		transition: height 0.25s ease;
 	}
 	
+}
+
+
+
+
+
+@media screen and (max-width: 800px) {
+	
+	.custom-accordion-image__content-cont {
+		margin: 70px 50px;
+	}
+	
+}
+
+
+
+
+
+
+@media screen and (max-width: 550px) {
+	
+	.custom-accordion-image__top-panel {
+		height: 120px
+	}
+	
+	.custom-accordion-image__header-cont {
+		height: 120px;
+	}
+	
+	.custom-accordion-image__header {
+		font-size: 18px;
+		line-height: 23px;
+	}
 	
 	
+	
+	
+	.custom-accordion-image__expand-icon {
+		width: 25px;
+		height: 25px;
+		padding: 0;
+		bottom: 7px;
+		right: 7px;
+		transition: bottom 0.25s ease ;
+	}
+	
+	.custom-accordion-image__expand-icon-bar {
+		height: 4px;
+	}
+	
+	.custom-accordion-image.open .custom-accordion-image__expand-icon {
+		bottom: 24px;
+		transition: bottom 0.25s ease 0.25s;
+	}
+	
+	.custom-accordion-image.open .custom-accordion-image__top-panel {
+		height: 260px;
+	}
+	
+	
+	
+	
+	.custom-accordion-image__content-cont {
+		margin: 0;
+		background-color: #E3CCD4;
+		padding: 5px 35px;
+	}
 	
 }

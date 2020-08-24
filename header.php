@@ -47,5 +47,12 @@
 				)
 			);
 			?>
+			<a href="<?php echo get_privacy_policy_url(); ?>" class="header__privacy-policy">Privacy Policy</a>
+			<div class="header__socials-cont">
+				<a href="#" class="header__social_icon header__social_icon-tw" target="_blank"></a>
+				<a href="#" class="header__social_icon header__social_icon-fb" target="_blank"></a>
+				<a href="#" class="header__social_icon header__social_icon-insta" target="_blank"></a>
+				<a href="#" class="header__social_icon header__social_icon-yt" target="_blank"></a>
+			</div>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

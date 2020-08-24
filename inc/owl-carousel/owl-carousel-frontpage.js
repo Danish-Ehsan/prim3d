@@ -4,16 +4,14 @@
         loop: false,
         dots: true,
 		items: 2,
+		margin: 20,
 		responsive: {
-			550: {
+			0: {
 				items: 1,
-				margin: 20
+				margin: 10
 			},
 			800: {
 				items: 2
-			},
-			1024: {
-				margin: 20
 			}
 		}
     });
