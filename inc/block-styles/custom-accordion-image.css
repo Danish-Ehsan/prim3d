@@ -287,12 +287,17 @@ Style sheet for ACF block "Static Image with Text"
 
 @media screen and (max-width: 550px) {
 	
+	custom-accordion-image {
+		margin: 30px 0;
+	}
+	
 	.custom-accordion-image__top-panel {
 		height: 120px
 	}
 	
 	.custom-accordion-image__header-cont {
 		height: 120px;
+		padding: 0 10px;
 	}
 	
 	.custom-accordion-image__header {
@@ -319,6 +324,10 @@ Style sheet for ACF block "Static Image with Text"
 	.custom-accordion-image.open .custom-accordion-image__expand-icon {
 		bottom: 24px;
 		transition: bottom 0.25s ease 0.25s;
+	}
+	
+	.custom-accordion-image.open .custom-accordion-image__header-cont {
+		padding: 0 35px;
 	}
 	
 	.custom-accordion-image.open .custom-accordion-image__top-panel {
