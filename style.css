@@ -1305,7 +1305,9 @@ a {
 .header__search-field-cont input[type="search"] {
 	border-radius: 20px;
 	background-color: #EFC499;
-	border: 1px solid #D8B18A;
+	/*border: 1px solid #D8B18A;*/
+	box-shadow: inset 2px 2px 2px 0px #D8B18A;
+	border: none;
 	padding-left: 20px;
 	padding-right: 20px;
 	outline: none;
@@ -2403,7 +2405,7 @@ a {
 		margin: 0;
 	}
 	
-	.wp-block-column {
+	.page-id-28 .wp-block-column {
 		flex: none;
 		flex-basis: unset !important;
 	}
@@ -2532,6 +2534,7 @@ a {
 	
 	.header__menu-list li {
 		padding-left: 0px;
+		padding-right: 0px;
 	}
 	
 	.sub-menu li {
