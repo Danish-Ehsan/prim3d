@@ -1976,6 +1976,7 @@ a {
 
 	.sub-menu a {
 		color: #fff;
+		display: block;
 	}
 
 	.sub-menu li.current-menu-item a {
@@ -2293,6 +2294,10 @@ a {
 	
 	.header__menu-list li {
 		padding-left: 0px;
+	}
+	
+	.sub-menu li {
+		padding: 15px 20px;
 	}
 	
 	
