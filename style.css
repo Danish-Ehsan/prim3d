@@ -2455,6 +2455,11 @@ a {
 	### Search Page - Max 800px
 	--------------------------------------------------------------*/
 	
+	.search-page article {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	
 	.search-page .page-header {
 		padding: 10px 40px;
 	}
@@ -2468,6 +2473,7 @@ a {
 	.search-page article:after {
 		width: calc(100% - 70px);
 		height: 3px;
+		margin: 50px 35px;
 	}
 	
 }
