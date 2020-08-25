@@ -55,7 +55,7 @@
 				<a href="#" class="header__social_icon header__social_icon-yt" target="_blank"></a>
 			</div>
 		</nav><!-- #site-navigation -->
-		<button class="header__search-btn"></button>
+		<button class="header__search-btn"><img src="<?php echo get_template_directory_uri() . '/images/search_icon.png'; ?>" alt="search-icon"></button>
 		<div class="header__search-field-cont">
 			<!--<input type="text" name="search" class="header__search-field">-->
 			<?php get_search_form(); ?>

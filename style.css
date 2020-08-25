@@ -994,7 +994,7 @@ textarea {
 ----------------------------------------------------------------
 --------------------------------------------------------------*/
 
-html, body, .container, .main {
+html, body, .container, .main, .article {
     width: 100%;
 	height: 100%;
     font-family: 'Roboto', sans-serif;
@@ -1050,6 +1050,10 @@ a:visited {
 p {
 	padding: 0 100px;
 	margin: 28px 0;
+}
+
+a {
+	color: #000;
 }
 
 .content-cont ul {
@@ -1252,17 +1256,42 @@ p {
 .header__search-btn {
 	width: 35px;
 	height: 35px;
+	padding: 5px;
+	box-sizing: content-box;
 	border: none;
 	background-color: transparent;
-	background-image: url(images/search_icon.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
 	position: absolute;
-	right: 120px;
-	bottom: 35px;
+	right: 110px;
+	bottom: 30px;
 	cursor: pointer;
 }
+
+.header__search-btn.expanded {
+	background-color: #640A22;
+	border-radius: 5px;
+}
+
+.header__search-btn img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+/*
+.header__search-btn:after {
+	content: "";
+	background-color: #640A22;
+	width: 40px;
+	height: 40px;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+	z-index: -1;
+}
+*/
 
 .header__search-field-cont {
 	display: none;
@@ -1803,10 +1832,12 @@ p {
 .search-page .post-thumbnail {
 	padding-left: 100px;
 	padding-right: 100px;
+	display: block;
 }
 
 .search-page .post-thumbnail img {
 	width: 500px;
+	border-radius: 10px;
 }
 
 .search-page article {
@@ -1831,7 +1862,9 @@ p {
 	margin-bottom: 100px;
 }
 
-
+.search-page a:hover {
+	color: #E38224;
+}
 
 
 
@@ -1845,6 +1878,30 @@ p {
 ## Responsive Styling
 --------------------------------------------------------------*/
 
+@media screen and (max-width: 1350px) {
+	
+	.header__search-btn {
+		right: 50px;
+	}
+	
+} 
+
+
+@media screen and (max-width: 1200px) {
+	
+	.header__search-btn {
+		right: 50px;
+	}
+	
+	.header__menu-list li {
+		padding: 20px 20px 40px 20px;
+	}
+	
+	.sub-menu a {
+		padding: 0 20px;
+	}
+} 
+
 
 @media screen and (max-width: 1024px) { 
 
@@ -1852,6 +1909,8 @@ p {
 		font-size: 33px;
 	}
 		
+	
+	
 	/*--------------------------------------------------------------
 	### Header - Max 1024px
 	--------------------------------------------------------------*/
@@ -1979,9 +2038,29 @@ p {
 
 	
 	
+	.header__search-btn {
+		display: none;
+	}
 	
+	.header__search-field-cont {
+		position: relative;
+		background-color: #770524;
+		border: none;
+		padding: 40px 68px;
+	}
 	
+	.header__search-field-cont input[type="search"] {
+		background-color: #640A22;
+		border: 1px solid #52081C;
+		color: #fff;
+	}
 	
+	.header__search-field-cont input[type="submit"] {
+		background-image: url(images/search_icon.png);
+		width: 25px;
+		height: 25px;
+		margin-left: 12px;
+	}
 	
 	
 	
@@ -1998,11 +2077,6 @@ p {
 	
 	
 	
-	
-	
-	
-	
-	
 	/*--------------------------------------------------------------
 	### General - Max 1024px
 	--------------------------------------------------------------*/
@@ -2010,11 +2084,6 @@ p {
 	.content-cont img {
 		border-radius: 0px;
 	}
-	
-	
-	
-	
-	
 	
 	
 	
@@ -2042,11 +2111,6 @@ p {
 	
 	
 	
-	
-	
-	
-	
-	
 	/*--------------------------------------------------------------
 	### Page - Max 1024px
 	--------------------------------------------------------------*/
@@ -2064,6 +2128,18 @@ p {
 	
 	
 	
+	/*--------------------------------------------------------------
+	### Search Page - Max 1024px
+	--------------------------------------------------------------*/
+	
+	.search .site-main {
+		margin-top: 0;
+	}
+	
+	.search-page .page-header {
+		border-radius: 0;
+		padding: 33px 100px;
+	}
 	
 	
 	
@@ -2114,6 +2190,18 @@ p {
 	}
 	
 	.topics-carousel__item-cont {
+		width: 100%;
+	}
+	
+	/*--------------------------------------------------------------
+	### Search Page - Max 800px
+	--------------------------------------------------------------*/
+	
+	.search-page .post-thumbnail {
+		width: 100%;
+	}
+	
+	.search-page .post-thumbnail img {
 		width: 100%;
 	}
 	
@@ -2203,6 +2291,7 @@ p {
 	
 	
 	
+	
 	.header__nav-btn {
 		top: 54px;
 	}
@@ -2214,6 +2303,12 @@ p {
 	
 	.header__menu-list li {
 		padding-left: 0px;
+	}
+	
+	
+	
+	.header__search-field-cont {
+		padding: 35px 30px 30px;
 	}
 	
 	
@@ -2354,6 +2449,25 @@ p {
 	
 	.page__get-prim3d .wp-block-button {
 		margin-bottom: 20px;
+	}
+	
+	/*--------------------------------------------------------------
+	### Search Page - Max 800px
+	--------------------------------------------------------------*/
+	
+	.search-page .page-header {
+		padding: 10px 40px;
+	}
+	
+	.search-page .post-thumbnail {
+		padding-left: 35px;
+		padding-right: 35px
+			
+	}
+	
+	.search-page article:after {
+		width: calc(100% - 70px);
+		height: 3px;
 	}
 	
 }
