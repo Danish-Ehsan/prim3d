@@ -2428,6 +2428,12 @@ a {
 		color: #E38224;
 	}
 	
+	.wpforms-submit-container {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+		text-align: center !important;
+	}
+	
 }
 
 
@@ -2758,11 +2764,6 @@ a {
 		font-size: 14px !important;
 	}
 	
-	.wpforms-submit-container {
-		padding-left: 0 !important;
-		padding-right: 0 !important;
-		text-align: center !important;
-	}
 	
 	
 	
