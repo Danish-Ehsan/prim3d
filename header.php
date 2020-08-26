@@ -26,7 +26,7 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'prim3d' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<div class="header__top-image" style="background-image: url(<?php echo get_template_directory_uri() . '/images/header_background.jpg'; ?>);"></div>
+		<div class="header__top-image" style="background-image: url(<?php echo get_template_directory_uri() . '/images/header_background.png'; ?>);"></div>
 		<div class="site-branding header__logo">
 			<?php the_custom_logo(); ?>
 			<button class="menu-toggle header__nav-btn" aria-controls="primary-menu" aria-expanded="false">

@@ -1079,12 +1079,12 @@ a {
 .header__top-image {
 	width: 100%;
 	height: 30px;
-	background-size: cover;
-	background-position: 50% 50%;
+	background-size: contain;
+	background-repeat: repeat-x;
 }
 
 .header__logo {
-	width: 500px;
+	width: 435px;
 	margin: 80px auto 0px auto;
 	padding-bottom: 30px;
 }
@@ -2078,6 +2078,7 @@ a {
 	.header__logo {
 		margin: 80px 0 0 100px;
 		padding-bottom: 40px;
+		width: 410px;
 	}
 
 	.header__logo img {
@@ -2086,6 +2087,7 @@ a {
 	
 	.header__nav-btn {
 		display: flex;
+		top: 120px;
 	}
 
 	.header__menu-list {
@@ -2351,11 +2353,7 @@ a {
 	--------------------------------------------------------------*/
 
 	.header__logo {
-		width: 400px;
-	}
-	
-	.header__nav-btn {
-		top: 118px;
+		width: 370px;
 	}
 	
 	
@@ -2511,7 +2509,7 @@ a {
 	}
 	
 	.header__logo a {
-		width: 55%;
+		width: 180px;
 		height: 100px;
 		background-image: url(images/prim3d_logo_mobile.png);
 		background-size: contain;
