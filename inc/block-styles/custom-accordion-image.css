@@ -28,7 +28,7 @@ Style sheet for ACF block "Static Image with Text"
 }
 
 .custom-accordion-image__image-cont {
-	width: 50%;
+	width: 60%;
 	height: 100%;
 	display: inline-block;
 	background-size: cover;
@@ -39,7 +39,7 @@ Style sheet for ACF block "Static Image with Text"
 }
 
 .custom-accordion-image__header-cont {
-	width: 50%;
+	width: 40%;
 	height: 225px;
 	display: inline-block;
 	background-size: cover;
@@ -65,6 +65,7 @@ Style sheet for ACF block "Static Image with Text"
 	transform: translateY(-50%);
 	max-width: 225px;
 	margin: 0 auto;
+	transition: max-width 0s ease;
 }
 
 
@@ -100,6 +101,7 @@ Style sheet for ACF block "Static Image with Text"
 .custom-accordion-image__top-panel:hover .custom-accordion-image__header,
 .custom-accordion-image__top-panel:focus-within .custom-accordion-image__header {
 	max-width: 800px;
+	transition: max-width 0s ease 0.15s;
 }
 
 
@@ -200,17 +202,27 @@ Style sheet for ACF block "Static Image with Text"
 		border-radius: 0;
 	}
 	
+}
 
+
+
+
+
+@media screen and (max-width: 800px) {
 	
-	/*---- Reset hover effects when panel is closed ---*/
+	.custom-accordion-image__content-cont {
+		margin: 70px 50px;
+	}
+	
+	/*	---- Reset hover effects when panel is closed ---*/	
 	.custom-accordion-image:hover .custom-accordion-image__image-cont,
 	.custom-accordion-image:focus-within .custom-accordion-image__image-cont {
-		width: 50%;
+		width: 60%;
 	}
 
 	.custom-accordion-image__top-panel:hover .custom-accordion-image__header-cont, 
 	.custom-accordion-image__top-panel:focus-within .custom-accordion-image__header-cont {
-		width: 50%;
+		width: 40%;
 	}
 
 	.custom-accordion-image__top-panel:hover .custom-accordion-image__header,
@@ -235,7 +247,6 @@ Style sheet for ACF block "Static Image with Text"
 	.custom-accordion-image.open .custom-accordion-image__top-panel:focus-within .custom-accordion-image__header {
 		max-width: 800px;
 	}
-	
 	
 	
 	
@@ -272,31 +283,31 @@ Style sheet for ACF block "Static Image with Text"
 
 
 
-@media screen and (max-width: 800px) {
-	
-	.custom-accordion-image__content-cont {
-		margin: 70px 50px;
-	}
-	
-}
-
-
-
-
-
 
 @media screen and (max-width: 550px) {
 	
-	custom-accordion-image {
+	.custom-accordion-image__top-panel * {
+		/*transition: none;*/
+	}
+	
+	.custom-accordion-image__image-cont {
+		width: 100%;
+		height: 175px;
+		position: absolute;
+		bottom: 0;
+	}
+	
+	.custom-accordion-image {
 		margin: 30px 0;
 	}
 	
 	.custom-accordion-image__top-panel {
-		height: 120px
+		height: 250px;
 	}
 	
 	.custom-accordion-image__header-cont {
-		height: 120px;
+		height: 75px;
+		width: 100%;
 		padding: 0 10px;
 	}
 	
@@ -308,30 +319,19 @@ Style sheet for ACF block "Static Image with Text"
 	
 	
 	
+	
 	.custom-accordion-image__expand-icon {
 		width: 25px;
 		height: 25px;
 		padding: 0;
-		bottom: 7px;
+		top: 50%;
+		transform: translateY(-50%);
 		right: 7px;
 		transition: bottom 0.25s ease ;
 	}
 	
 	.custom-accordion-image__expand-icon-bar {
 		height: 4px;
-	}
-	
-	.custom-accordion-image.open .custom-accordion-image__expand-icon {
-		bottom: 24px;
-		transition: bottom 0.25s ease 0.25s;
-	}
-	
-	.custom-accordion-image.open .custom-accordion-image__header-cont {
-		padding: 0 35px;
-	}
-	
-	.custom-accordion-image.open .custom-accordion-image__top-panel {
-		height: 260px;
 	}
 	
 	
@@ -342,5 +342,24 @@ Style sheet for ACF block "Static Image with Text"
 		background-color: #E3CCD4;
 		padding: 5px 35px;
 	}
+	
+	
+	
+	
+	.custom-accordion-image.open .custom-accordion-image__top-panel {
+		height: 250px;
+	}
+	
+	/*	---- Reset hover effects when panel is closed ---*/	
+	.custom-accordion-image:hover .custom-accordion-image__image-cont,
+	.custom-accordion-image:focus-within .custom-accordion-image__image-cont {
+		width: 100%;
+	}
+
+	.custom-accordion-image__top-panel:hover .custom-accordion-image__header-cont, 
+	.custom-accordion-image__top-panel:focus-within .custom-accordion-image__header-cont {
+		width: 100%;
+	}
+	
 	
 }

@@ -17,11 +17,12 @@ Style sheet for ACF block "Static Image with Text"
 	height: 100%;
 	position: relative;
 	min-width: 1024px;
+	min-height: 230px;
 	margin: 40px 0;
 }
 
 .block-static-image__image-cont {
-	width: 50%;
+	width: 35%;
 	height: auto;
 	background-size: cover;
 	background-position: 50% 50%;
@@ -30,8 +31,10 @@ Style sheet for ACF block "Static Image with Text"
 }
 
 .block-static-image__copy-cont {
-	width: 50%;
-	height: 100%;
+	width: 65%;
+	min-height: 100%;
+	display: flex;
+	align-items: center;
 	padding: 50px 45px;
 	background-size: cover;
 	background-position: 50% 50%;
