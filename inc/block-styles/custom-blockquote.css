@@ -1,0 +1,49 @@
+@media screen and (max-width: 550px) {
+	
+	.custom-blockquote {
+		padding: 0 35px;
+		position: relative;
+	}
+	
+	.custom-blockquote__copy-cont {
+		background-color: #f6d4b3;
+		padding: 65px 35px;
+		border-radius: 55px 0 55px 0;
+	}
+	
+	.custom-blockquote__copy-cont:before {
+		content: "";
+		width: 43px;
+		height: 43px;
+		background-image: url(../../images/quote_icon.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: 50% 50%;
+		position: absolute;
+		top: 14px;
+		left: 54px;
+	}
+	
+	.custom-blockquote__copy-cont:after {
+		content: "";
+		width: 43px;
+		height: 43px;
+		background-image: url(../../images/quote_icon.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: 50% 50%;
+		transform: rotate(180deg);
+		position: absolute;
+		bottom: 14px;
+		right: 54px;
+	}
+	
+	.custom-blockquote p {
+		text-align: center;
+		font-size: 14px;
+		margin: 0;
+		padding: 0;
+		line-height: 21px;
+	}
+	
+}

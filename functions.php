@@ -221,7 +221,7 @@ function primed_acf_blocks_init() {
     // Check function exists.
     if( function_exists('acf_register_block_type') ) {
 
-        // Register a static image block.
+        // Register static image block.
         acf_register_block_type(array(
             'name'              => 'static-image-text',
             'title'             => __('Static Image with Text'),
@@ -231,6 +231,7 @@ function primed_acf_blocks_init() {
 			'enqueue_style'		=> get_template_directory_uri() . '/inc/block-styles/block-static-image.css'
         ));
 		
+		// Register custom accordion block
 		acf_register_block_type(array(
             'name'              => 'custom_accordion',
             'title'             => __('Custom Accordion'),
@@ -241,7 +242,7 @@ function primed_acf_blocks_init() {
 			'enqueue_script'	=> get_template_directory_uri() . '/inc/block-scripts/custom-accordion.js'
         ));
 		
-		// Register a static image block.
+		// Register custom accordion with image block
         acf_register_block_type(array(
             'name'              => 'custom-accordion-iamge',
             'title'             => __('Custom Accordion with Image'),
@@ -250,6 +251,16 @@ function primed_acf_blocks_init() {
             'category'          => 'formatting',
 			'enqueue_style'		=> get_template_directory_uri() . '/inc/block-styles/custom-accordion-image.css',
 			'enqueue_script'	=> get_template_directory_uri() . '/inc/block-scripts/custom-accordion-image.js'
+        ));
+		
+		// Register custom blockquote block
+        acf_register_block_type(array(
+            'name'              => 'custom-blockquote',
+            'title'             => __('Custom Blockquote'),
+            'description'       => __('A custom blockquote block.'),
+            'render_template'   => 'template-parts/blocks/custom-blockquote.php',
+            'category'          => 'formatting',
+			'enqueue_style'		=> get_template_directory_uri() . '/inc/block-styles/custom-blockquote.css'
         ));
     }
 }
