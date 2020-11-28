@@ -2021,6 +2021,25 @@ a {
 
 
 
+
+
+/*--------------------------------------------------------------
+## Page - Privacy Policy
+--------------------------------------------------------------*/
+
+.privacy-policy h2 {
+	line-height: 42px;
+	font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
 /*--------------------------------------------------------------
 ## Responsive Styling
 --------------------------------------------------------------*/
@@ -2453,6 +2472,8 @@ a {
 
 	h1, h2, h3, h4 {
 		text-align: center;
+		padding-left: 35px;
+		padding-right: 35px;
 	}
 
 	h1 {
@@ -2468,6 +2489,7 @@ a {
 
 	h3 {
 		font-size: 16px;
+		text-align: left;
 	}
 	
 	.page .content-header {
@@ -2647,6 +2669,17 @@ a {
 		margin: 10px 0;
 	}
 	
+	.topics-carousel__image-cont:hover ~ .topics-carousel__copy-cont .topics-carousel__title {
+		color: inherit;
+	}
+
+	.topics-carousel__title:hover, .topics-carousel__title:focus {
+		color: inherit;
+	}
+	
+	
+	
+	
 	
 	/*--------------------------------------------------------------
 	### Archives - Max 550px
@@ -2789,5 +2822,22 @@ a {
 	.page-id-28 .wp-block-columns .wp-block-column:nth-of-type(2) {
 		padding: 60px 50px;
 	}
+	
+	
+	
+	
+	
+	
+	
+	/*--------------------------------------------------------------
+	## Page - Privacy Policy - Max 550px
+	--------------------------------------------------------------*/
+	
+	.privacy-policy h2 {
+		line-height: 30px;
+		font-size: 20px;
+	}
+	
+	
 	
 }
