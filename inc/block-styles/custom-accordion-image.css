@@ -308,12 +308,13 @@ Style sheet for ACF block "Static Image with Text"
 	.custom-accordion-image__header-cont {
 		height: 75px;
 		width: 100%;
-		padding: 0 10px;
+		padding: 0 55px;
 	}
 	
 	.custom-accordion-image__header {
 		font-size: 18px;
 		line-height: 23px;
+		max-width: none;
 	}
 	
 	
@@ -359,6 +360,16 @@ Style sheet for ACF block "Static Image with Text"
 	.custom-accordion-image__top-panel:hover .custom-accordion-image__header-cont, 
 	.custom-accordion-image__top-panel:focus-within .custom-accordion-image__header-cont {
 		width: 100%;
+	}
+	
+	.custom-accordion-image.open .custom-accordion-image__top-panel:hover .custom-accordion-image__header,
+	.custom-accordion-image.open .custom-accordion-image__top-panel:focus-within .custom-accordion-image__header {
+		max-width: none;
+	}
+	
+	.custom-accordion-image__top-panel:hover .custom-accordion-image__header, 
+	.custom-accordion-image__top-panel:focus-within .custom-accordion-image__header {
+		max-width: none;
 	}
 	
 	
