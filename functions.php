@@ -244,13 +244,23 @@ function primed_acf_blocks_init() {
 		
 		// Register custom accordion with image block
         acf_register_block_type(array(
-            'name'              => 'custom-accordion-iamge',
+            'name'              => 'custom-accordion-image',
             'title'             => __('Custom Accordion with Image'),
             'description'       => __('A custom accordion block.'),
             'render_template'   => 'template-parts/blocks/custom-accordion-image.php',
             'category'          => 'formatting',
 			'enqueue_style'		=> get_template_directory_uri() . '/inc/block-styles/custom-accordion-image.css',
 			'enqueue_script'	=> get_template_directory_uri() . '/inc/block-scripts/custom-accordion-image.js'
+        ));
+		
+		// Register double column text block
+        acf_register_block_type(array(
+            'name'              => 'custom-double-column-text',
+            'title'             => __('Custom text block with two columns'),
+            'description'       => __('A custom text block.'),
+            'render_template'   => 'template-parts/blocks/custom-double-column-text.php',
+            'category'          => 'formatting',
+			'enqueue_style'		=> get_template_directory_uri() . '/inc/block-styles/custom-double-column-text.css'
         ));
 		
 		// Register custom blockquote block
