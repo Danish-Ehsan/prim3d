@@ -1796,6 +1796,82 @@ a {
 
 
 
+/*--------------------------------------------------------------
+## Archives - Prim3d Topics
+--------------------------------------------------------------*/
+
+.post-type-archive-prim3d_topics .site {
+	background-image: url('images/accordion_background.png');
+	background-size: 80%;
+	background-repeat: repeat;
+}
+
+.prim3d-topics-archive {
+	
+}
+
+.prim3d-topics-archive__header {
+	background-color: transparent;
+	padding: 20px 100px 15px 100px;
+}
+
+.prim3d-topics-archive__subheader {
+	display: block;
+	margin-top: 25px;
+	max-width: 420px;
+}
+
+
+
+
+
+.prim3d-topics-archive__all-articles-cont {
+	padding: 0 100px 38px 100px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.prim3d-topics-archive__article-cont {
+	width: 48%;
+	border-radius: 10px;
+	background-color: #770524;
+	height: 200px;
+	color: #fff;
+	margin-bottom: 30px;
+	padding: 40px;
+	text-decoration: none;
+	text-align: center;
+}
+
+.prim3d-topics-archive__article-title {
+	font-size: 24px;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+.prim3d-topics-archive__article-excerpt {
+	font-size: 16px;
+}
+
+.prim3d-topics-archive__article-cont p {
+	padding: 0;
+	margin: 15px 0 0 0;
+}
+
+.prim3d-topics-archive__article-cont:visited {
+	color: #fff;
+}
+
+.prim3d-topics-archive__article-cont:hover, .prim3d-topics-archive__article-cont:focus {
+	color: #E38224;
+}
+
+
+
+
+
 
 
 /*--------------------------------------------------------------
@@ -2378,6 +2454,23 @@ a {
 		width: 100%;
 	}
 	
+	
+	
+	
+	/*--------------------------------------------------------------
+	### Archives - Prim3d Topics - Max 800px
+	--------------------------------------------------------------*/
+	
+	.prim3d-topics-archive__article-cont {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		align-content: center;
+		justify-content: center;
+	}
+	
+	
+	
 	/*--------------------------------------------------------------
 	### Search Page - Max 800px
 	--------------------------------------------------------------*/
@@ -2389,6 +2482,9 @@ a {
 	.search-page .post-thumbnail img {
 		width: 100%;
 	}
+	
+	
+	
 	
 	/*--------------------------------------------------------------
 	### Page - Contact Us - Max 800px
@@ -2678,6 +2774,33 @@ a {
 		margin-bottom: 50px;
 		padding: 10px 40px;
 	}
+	
+	
+	/*--------------------------------------------------------------
+	### Archives - Prim3d Topics - Max 800px
+	--------------------------------------------------------------*/
+	
+	.prim3d-topics-archive__header {
+		padding: 0;
+	}
+	
+	.prim3d-topics-archive__header .page-title {
+		padding: 10px 40px;
+		margin-bottom: 40px;
+		background-color: #E38224;
+		color: #fff;
+	}
+	
+	.prim3d-topics-archive__subheader {
+		padding: 0 35px 15px;
+		max-width: 400px;
+		
+	}
+	
+	.prim3d-topics-archive__all-articles-cont {
+		padding: 0 35px;
+	}
+	
 	
 	
 	
