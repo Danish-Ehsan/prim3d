@@ -43,7 +43,6 @@ get_header();
 					<div class="topics-carousel__image-cont" style="background-image: url(<?php the_post_thumbnail_url(); ?>)"><a href="<?php the_permalink(); ?>"></a></div>
 					<div class="topics-carousel__copy-cont">
 						<a href="<?php the_permalink(); ?>" class="topics-carousel__title"><?php the_title(); ?></a>
-						<span class="topics-carousel__excerpt"><?php the_excerpt(); ?></span>
 					</div>
 				</div>
 				<?php
