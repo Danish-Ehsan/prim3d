@@ -51,13 +51,46 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Custom Styles
 	## Header
 	## Footer
+	## General
 	## Page
 	## Single Post
 	## Front Page
 	## Page - Get Prim3d
 	## Archives
+	## Archives - Prim3d Topics
+	## Search Page
+	## Page - Contact Us
+	## Page - Privacy Policy
 
 	## Responsive Styling
+		### Header - Max 1024px
+		### Footer - Max 1024px
+		### General - Max 1024px
+		### Front Page - Max 1024px
+		### Archives - Prim3d Topics - Max 1024px
+		### Page - Max 1024px
+		### Search Page - Max 1024px
+		### Page - Get Prim3d - Max 1024px
+		### Page - Contact Us - Max 1024px
+
+		### Header - Max 800px
+		### Front Page - Max 800px
+		### Archives - Prim3d Topics - Max 800px
+		### Search Page - Max 800px
+		### Page - Contact Us - Max 800px
+
+		### Header - Max 550px
+		### Footer - Max 550px
+		### Front Page - Max 550px
+		### Archives - Max 550px
+		### Archives - Prim3d Topics - Max 800px
+		### Single Post - Max 550px
+		### Page - Resources - Max 550px
+		### Page - Get Prim3d - Max 550px
+		### Search Page - Max 550px
+		### Page - Contact Us - Max 550px
+		### Page - Privacy Policy - Max 550px
+
 
 --------------------------------------------------------------*/
 
@@ -1021,6 +1054,7 @@ h2 {
 	font-size: 36px;
 	padding: 0 100px;
 	margin-bottom: 40px;
+	line-height: 1.2;
 }
 
 h3 {
@@ -1050,6 +1084,7 @@ a:visited {
 p {
 	padding: 0 100px;
 	margin: 28px 0;
+	line-height: 1.4;
 }
 
 a {
@@ -1548,11 +1583,38 @@ a {
 
 .content-cont figure {
 	margin: 40px 0;
-	border-radius: 10px;
+	border-radius: 0;
 }
 
+.content-cont a {
+	color: #E38224;
+}
 
+.content-cont ul {
+	list-style-image: url("images/list-bullet.png");
+	line-height: 1.4;
+}
 
+.content-cont li {
+	padding: 10px 0 0 8px;
+}
+
+.content-cont li ul {
+	list-style-image: url("images/list-bullet-outline.png");
+}
+
+.content-cont li ul {
+	margin-left: 0;
+}
+
+.content-cont ul:first-child {
+	margin-top: 28px;
+}
+
+.no-padding-and-margin {
+	padding: 0;
+	margin: 60px 0 -20px 0;
+}
 
 
 
@@ -1561,11 +1623,16 @@ a {
 ## Page
 --------------------------------------------------------------*/
 
-.page .content-header {
+/*.page .content-header {
 	background-color: #E38224;
 	padding: 38px 100px;
 	color: #fff;
 	border-radius: 12px;
+	margin-bottom: 40px;
+}*/
+
+.page .content-header {
+	padding: 20px 100px 0;
 	margin-bottom: 40px;
 }
 
@@ -1577,16 +1644,21 @@ a {
 
 
 
-
-
 /*--------------------------------------------------------------
-## Single Post
+## Single Post - Prim3d Topics
 --------------------------------------------------------------*/
 
-.single-prim3d_topics .site-main {
-	margin-top: 120px;
+.single-prim3d_topics .content-header {
+	padding: 20px 100px 0;
 }
 
+.single-prim3d_topics h2:first-of-type {
+	margin-top: 0;
+}
+
+.single-prim3d_topics.postid-209 .content-cont ul {
+	list-style-image: url("images/list-bullet-burgundy.png");
+}
 
 
 
@@ -1683,10 +1755,15 @@ a {
 	color: #fff;
 	overflow: hidden;
 	text-align: center;
+	height: 88px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .topics-carousel__copy-cont a {
 	color: #fff;
+	line-height: 1.1;
 }
 
 .topics-carousel__copy-cont p {
@@ -1731,8 +1808,6 @@ a {
 
 .page__get-prim3d .wp-block-buttons {
 	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
 }
 
 .page__get-prim3d .wp-block-button {
@@ -1745,6 +1820,11 @@ a {
 	width: 100%;
 	box-sizing: content-box;
 	padding: 20px 0;
+	color: #fff;
+}
+
+.page__get-prim3d .wp-block-button a:hover, .page__get-prim3d .wp-block-button a:focus {
+	color: #E38224;
 }
 
 
@@ -1806,13 +1886,9 @@ a {
 	background-repeat: repeat;
 }
 
-.prim3d-topics-archive {
-	
-}
-
 .prim3d-topics-archive__header {
 	background-color: transparent;
-	padding: 20px 100px 15px 100px;
+	padding: 20px 0 15px;
 }
 
 .prim3d-topics-archive__subheader {
@@ -1826,7 +1902,7 @@ a {
 
 
 .prim3d-topics-archive__all-articles-cont {
-	padding: 0 100px 38px 100px;
+	padding: 0 0 38px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -1834,7 +1910,7 @@ a {
 }
 
 .prim3d-topics-archive__article-cont {
-	width: 48%;
+	width: 48.5%;
 	border-radius: 10px;
 	background-color: #770524;
 	height: 200px;
@@ -1843,12 +1919,14 @@ a {
 	padding: 40px;
 	text-decoration: none;
 	text-align: center;
+	overflow: scroll;
 }
 
 .prim3d-topics-archive__article-title {
 	font-size: 24px;
 	font-weight: 700;
 	text-decoration: underline;
+	line-height: 1.2;
 }
 
 .prim3d-topics-archive__article-excerpt {
@@ -1942,7 +2020,8 @@ a {
 	background-color: #770524;
 	position: relative;
 	margin-bottom: 0;
-	padding-top: 60px;
+	padding: 60px 100px 38px 100px;
+	color: #fff;
 }
 
 .page-id-28 .content-header:before {
@@ -2348,17 +2427,50 @@ a {
 	
 	
 	/*--------------------------------------------------------------
+	### Archives - Prim3d Topics - Max 1024px
+	--------------------------------------------------------------*/
+	
+	.prim3d-topics-archive__header {
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+	
+	.prim3d-topics-archive__all-articles-cont {
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+	
+	
+	/*--------------------------------------------------------------
 	### Page - Max 1024px
 	--------------------------------------------------------------*/
 	
 	.page .site-main {
-		margin-top: 0;
+		margin-top: 40px;
 	}
 	
 	.page .content-header {
 		border-radius: 0;
-		padding: 33px 100px;
+		padding: 33px 100px 5px;
+		margin-bottom: 0;
 	}
+	
+	
+	
+	
+	
+	/*--------------------------------------------------------------
+	## Single Post - Prim3d Topics
+	--------------------------------------------------------------*/
+	
+	.single-prim3d_topics .site-main {
+		margin-top: 40px;
+	}
+	
+	.single-prim3d_topics .content-header {
+		padding-top: 33px;
+	}
+	
 	
 	
 	
@@ -2389,6 +2501,9 @@ a {
 		margin-bottom: 0;
 	}
 	
+	.page__get-prim3d .content-header {
+		padding-bottom: 30px;
+	}
 	
 	
 	
@@ -2577,7 +2692,7 @@ a {
 	}
 	
 	.page .content-header {
-		padding: 10px 40px;
+		padding: 10px 35px;
 	}
 	
 	p {
@@ -2593,6 +2708,15 @@ a {
 		margin-top: 0;
 	}
 	
+	.page .content-header {
+		padding: 10px 35px 0;
+	}
+	
+	.content-header h1, .content-header h2 {
+		padding-left: 0;
+		padding-right: 0;
+		text-align: left;
+	}
 	
 	
 	
@@ -2735,14 +2859,9 @@ a {
 		height: 275px;
 	}
 	
-	.topics-carousel__image-cont:after {
-		height: 24px;
-	}
-	
 	.topics-carousel__copy-cont {
 		padding: 30px 35px;
-		margin-top: 24px;
-		height: 210px;
+		height: 150px;
 	}
 	
 	.topics-carousel__title {
@@ -2777,43 +2896,57 @@ a {
 	
 	
 	/*--------------------------------------------------------------
-	### Archives - Prim3d Topics - Max 800px
+	### Archives - Prim3d Topics - Max 550px
 	--------------------------------------------------------------*/
+	
+	.prim3d-topics-archive.site-main {
+		margin-top: 40px;
+	}
 	
 	.prim3d-topics-archive__header {
 		padding: 0;
 	}
 	
 	.prim3d-topics-archive__header .page-title {
-		padding: 10px 40px;
-		margin-bottom: 40px;
-		background-color: #E38224;
-		color: #fff;
+		padding: 10px 35px;
+		margin-bottom: 0;
+		text-align: left;
 	}
 	
 	.prim3d-topics-archive__subheader {
 		padding: 0 35px 15px;
 		max-width: 400px;
-		
+		margin-top: 8px;
 	}
 	
 	.prim3d-topics-archive__all-articles-cont {
 		padding: 0 35px;
 	}
 	
+	.prim3d-topics-archive__article-cont {
+		padding: 40px 30px;
+		align-content: flex-start;
+		height: 240px;
+	}
+	
+	
 	
 	
 	
 	/*--------------------------------------------------------------
-	### Single Post - Max 550px
+	### Single Post - Prim3d Topics - Max 550px
 	--------------------------------------------------------------*/
 	
 	.single-prim3d_topics .site-main {
 		margin-top: 30px;
 	}
 	
+	.single-prim3d_topics .content-header {
+		padding: 20px 35px 0;
+	}
+	
 	/*--------------------------------------------------------------
-	### Page - Resources - Max 800px
+	### Page - Resources - Max 550px
 	--------------------------------------------------------------*/
 
 	.page-id-26 .site-main {
@@ -2821,7 +2954,7 @@ a {
 	}
 	
 	.page-id-26 .content-header {
-		margin-bottom: 0;
+		margin-bottom: 8px;
 	}
 	
 	.page-id-26 .content-cont figure {
@@ -2832,7 +2965,7 @@ a {
 	
 	
 	/*--------------------------------------------------------------
-	### Page - Get Prim3d - Max 800px
+	### Page - Get Prim3d - Max 550px
 	--------------------------------------------------------------*/
 	
 	.page__get-prim3d .wp-block-column:first-of-type p {
@@ -2847,11 +2980,15 @@ a {
 		margin-bottom: 20px;
 	}
 	
+	.page__get-prim3d .content-header {
+		padding-bottom: 28px;
+	}
+	
 	
 	
 	
 	/*--------------------------------------------------------------
-	### Search Page - Max 800px
+	### Search Page - Max 550px
 	--------------------------------------------------------------*/
 	
 	.search-page article {
@@ -2881,6 +3018,10 @@ a {
 	/*--------------------------------------------------------------
 	### Page - Contact Us - Max 550px
 	--------------------------------------------------------------*/
+	
+	.page-id-28 .site-main {
+		margin-top: 0;
+	}
 	
 	.page-id-28 .content-header {
 		text-align: left;
@@ -2941,7 +3082,7 @@ a {
 	
 	
 	/*--------------------------------------------------------------
-	## Page - Privacy Policy - Max 550px
+	### Page - Privacy Policy - Max 550px
 	--------------------------------------------------------------*/
 	
 	.privacy-policy h2 {
