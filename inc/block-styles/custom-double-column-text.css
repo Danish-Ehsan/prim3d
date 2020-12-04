@@ -38,16 +38,26 @@ Style sheet for ACF block "Double Column Text Block"
 
 .custom-double-column-text-block__left-column-copy {
 	width: 60%;
-	padding: 40px 50px;
+	padding: 25px 50px;
 	font-size: 16px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-content: center;
+	background-image: url('../../images/banner_background.png');
+	background-size: cover;
 }
 
 .custom-double-column-text-block__right-column-copy {
 	width: 40%;
-	padding: 40px 50px;
+	padding: 25px 50px;
 	background-color: #E3CBD1;
 	color: #000;
 	font-size: 14px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-content: center;
 }
 
 

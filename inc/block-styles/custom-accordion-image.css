@@ -6,6 +6,16 @@ Style sheet for ACF block "Static Image with Text"
     Author     : Danish
 */
 
+h2 {
+	font-size: 22px;
+	color: #770524;
+	margin: 45px 0 20px;
+}
+
+h4 {
+	margin-bottom: 0;
+}
+
 .custom-accordion-image {
 	margin: 40px 0;
 }
@@ -173,7 +183,7 @@ Style sheet for ACF block "Static Image with Text"
 
 .custom-accordion-image__content-cont {
 	padding: 5px 50px;
-	margin: 70px 100px;
+	margin: 30px 100px;
 	background-color: #fff;
 }
 
@@ -182,9 +192,9 @@ Style sheet for ACF block "Static Image with Text"
 	padding-right: 0;
 }
 
-
-
-
+.custom-accordion-image ul {
+	margin-left: 20px;
+}
 
 
 @media screen and (max-width: 1024px) {
