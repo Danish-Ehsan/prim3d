@@ -1606,6 +1606,7 @@ a {
 
 .content-cont li ul {
 	margin-left: 0;
+	padding-left: 20px;
 }
 
 .content-cont ul:first-child {
