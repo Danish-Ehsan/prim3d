@@ -1592,7 +1592,7 @@ a {
 }
 
 .content-cont ul {
-	list-style-image: url("images/list-bullet.png");
+	list-style-image: url("images/list-bullet-sm.png");
 	line-height: 1.4;
 }
 
@@ -1601,7 +1601,7 @@ a {
 }
 
 .content-cont li ul {
-	list-style-image: url("images/list-bullet-outline.png");
+	list-style-image: url("images/list-bullet-outline-sm.png");
 }
 
 .content-cont li ul {
@@ -1658,7 +1658,7 @@ a {
 }
 
 .single-prim3d_topics.postid-209 .content-cont ul {
-	list-style-image: url("images/list-bullet-burgundy.png");
+	list-style-image: url("images/list-bullet-burgundy-sm.png");
 }
 
 
@@ -1773,7 +1773,7 @@ a {
 }
 
 .topics-carousel__title {
-	font-size: 30px;
+	font-size: 28px;
 	font-weight: 700;
 }
 
