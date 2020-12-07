@@ -382,5 +382,13 @@ h4 {
 		max-width: none;
 	}
 	
+	.custom-accordion-image ul {
+		padding: 0 20px;
+	}
+	
+	.custom-accordion-image li ul {
+		padding: 0 20px;
+	}
+	
 	
 }
