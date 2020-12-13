@@ -32,7 +32,7 @@ $bck_image = get_field('background_image');
 			</button>
 		</div>
 	</div>
-	<div class="custom-accordion-image__slide-panel">
+	<div class="custom-accordion-image__slide-panel js--slide-panel">
 		<div class="custom-accordion-image__content-cont">
 			<?php echo $content; ?>
 		</div>
