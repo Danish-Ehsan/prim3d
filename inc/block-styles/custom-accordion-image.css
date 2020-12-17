@@ -163,7 +163,7 @@ h4 {
 .custom-accordion-image__slide-panel {
 	background-color: #fff;
 	background-image: url("../../images/accordion_background.png");
-	background-size: cover;
+	background-size: 100%;
 	background-position: 50% 50%;
 	padding: 0;
 	height: 0;
