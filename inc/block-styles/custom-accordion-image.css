@@ -80,7 +80,7 @@ h4 {
 
 
 
-
+/*
 .custom-accordion-image.open .custom-accordion-image__top-panel {
 	height: 325px;
 }
@@ -112,7 +112,7 @@ h4 {
 .custom-accordion-image__top-panel:focus-within .custom-accordion-image__header {
 	max-width: 800px;
 	transition: max-width 0s ease 0.15s;
-}
+}*/
 
 
 
@@ -223,7 +223,8 @@ h4 {
 		margin: 70px 50px;
 	}
 	
-	/*	---- Reset hover effects when panel is closed ---*/	
+	/*	
+		---- Reset hover effects when panel is closed ---	
 	.custom-accordion-image:hover .custom-accordion-image__image-cont,
 	.custom-accordion-image:focus-within .custom-accordion-image__image-cont {
 		width: 60%;
@@ -241,7 +242,7 @@ h4 {
 	
 	
 	
-	/*---- Reset hover effects when panel is open ---*/
+	---- Reset hover effects when panel is open ---
 	.custom-accordion-image.open:hover .custom-accordion-image__image-cont,
 	.custom-accordion-image:focus-within .custom-accordion-image__image-cont {
 		width: 100%;
@@ -256,7 +257,7 @@ h4 {
 	.custom-accordion-image.open .custom-accordion-image__top-panel:focus-within .custom-accordion-image__header {
 		max-width: 800px;
 	}
-	
+	*/
 	
 	
 	
