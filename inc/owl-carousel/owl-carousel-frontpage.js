@@ -11,7 +11,8 @@
 				margin: 10
 			},
 			800: {
-				items: 2
+				items: 2,
+				nav: true
 			}
 		}
     });

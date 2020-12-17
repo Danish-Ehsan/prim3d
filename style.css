@@ -1786,9 +1786,23 @@ a {
 	color: #E38224;
 }
 
+.owl-nav button span {
+	display: none;
+}
 
+.owl-nav button {
+	width: 12px;
+	height: 30px;
+	background-image: url(images/carousel-arrow.png) !important;
+	background-position: 50% 50% !important;
+	background-size: contain !important;
+	background-repeat: no-repeat !important;
+	margin: 7px 12px 15px !important;
+}
 
-
+.owl-nav .owl-next {
+	transform: rotate(180deg);
+}
 
 
 
