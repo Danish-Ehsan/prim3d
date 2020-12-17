@@ -1662,6 +1662,51 @@ a {
 	list-style-image: url("images/list-bullet-burgundy-sm.png");
 }
 
+.page-navigation {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 80px 0;
+	padding: 0 100px;
+	font-weight: 700;
+	font-size: 16px;
+}
+
+.page-navigation a {
+	display: flex;
+	align-items: center;
+	margin: 10px 0;
+}
+
+.page-navigation a, .page-navigation a:visited, .page-navigation a:hover {
+	color: #770524;
+}
+
+.page-navigation .page-navigation__prev a:before {
+	content: '';
+	display: inline-block;
+	width: 10px;
+	height: 25px;
+	margin-right: 10px;
+	background-image: url(images/maroon-arrow.png);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.page-navigation .page-navigation__next a:after {
+	content: '';
+	display: inline-block;
+	width: 10px;
+	height: 25px;
+	margin-left: 10px;
+	background-image: url(images/maroon-arrow.png);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	transform: rotate(180deg);
+}
+
 
 
 /*--------------------------------------------------------------
@@ -1935,7 +1980,7 @@ a {
 	padding: 40px;
 	text-decoration: none;
 	text-align: center;
-	overflow: scroll;
+	overflow: hidden;
 }
 
 .prim3d-topics-archive__article-title {
@@ -1952,6 +1997,8 @@ a {
 .prim3d-topics-archive__article-cont p {
 	padding: 0;
 	margin: 15px 0 0 0;
+	height: 90px;
+	overflow: hidden;
 }
 
 .prim3d-topics-archive__article-cont:visited {
@@ -2045,11 +2092,10 @@ a {
 
 .page-id-28 .content-header {
 	border-radius: 0;
-	/*border-top: ;*/
 	background-color: #770524;
 	position: relative;
 	margin-bottom: 0;
-	padding: 60px 100px 38px 100px;
+	padding: 60px 100px 10px 100px;
 	color: #fff;
 }
 
@@ -2908,6 +2954,10 @@ a {
 	
 	.single-prim3d_topics .content-header {
 		padding: 20px 35px 0;
+	}
+	
+	.page-navigation {
+		padding: 0 35px;
 	}
 	
 	/*--------------------------------------------------------------

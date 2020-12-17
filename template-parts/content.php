@@ -26,29 +26,22 @@
 		);
 		?>
 	</div><!-- .entry-content -->
-
-	<?php if ( get_edit_post_link() ) : ?>
-		<footer class="entry-footer">
+	
+	<footer class="entry-footer">
+		<div class="page-navigation">
 			<?php
-			/*
-			edit_post_link(
-				sprintf(
-					wp_kses(
-						/* translators: %s: Name of current post. Only visible to screen readers /*
-						__( 'Edit <span class="screen-reader-text">%s</span>', 'prim3d' ),
-						array(
-							'span' => array(
-								'class' => array(),
-							),
-						)
-					),
-					wp_kses_post( get_the_title() )
-				),
-				'<span class="edit-link">',
-				'</span>'
-			);
-			*/		
+				if ( get_previous_post() ) {
+					echo '<div class="page-navigation__prev">';
+					previous_post_link( '%link', '%title');
+					echo '</div>';
+				}
+				if ( get_next_post() ) {
+					echo '<div class="page-navigation__next">';
+					next_post_link( '%link', '%title' );
+					echo '</div>';
+				}
 			?>
-		</footer><!-- .entry-footer -->
-	<?php endif; ?>
+		</div>
+	</footer><!-- .entry-footer -->
+
 </article><!-- #post-<?php the_ID(); ?> -->
