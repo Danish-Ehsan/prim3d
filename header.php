@@ -49,10 +49,10 @@
 			?>
 			<a href="<?php echo get_privacy_policy_url(); ?>" class="header__privacy-policy">Privacy Policy</a>
 			<div class="header__socials-cont">
-				<a href="#" class="header__social_icon header__social_icon-tw" target="_blank"></a>
-				<a href="#" class="header__social_icon header__social_icon-fb" target="_blank"></a>
-				<a href="#" class="header__social_icon header__social_icon-insta" target="_blank"></a>
-				<a href="#" class="header__social_icon header__social_icon-yt" target="_blank"></a>
+				<a href="https://twitter.com/GMSHAlliance" class="header__social_icon header__social_icon-tw" target="_blank"></a>
+				<a href="https://www.facebook.com/GMSHAlliance" class="header__social_icon header__social_icon-fb" target="_blank"></a>
+				<a href="https://www.instagram.com/gaymenssexualhealthalliance/" class="header__social_icon header__social_icon-insta" target="_blank"></a>
+				<a href="https://www.youtube.com/channel/UCnGJjn0Xn37GiXv0F3jBTTA"" class="header__social_icon header__social_icon-yt" target="_blank"></a>
 			</div>
 		</nav><!-- #site-navigation -->
 		<button class="header__search-btn"><img src="<?php echo get_template_directory_uri() . '/images/search_icon.png'; ?>" alt="search-icon"></button>
