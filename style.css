@@ -53,7 +53,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	## Footer
 	## General
 	## Page
-	## Single Post
+	## Single Post - Prim3d Topics
 	## Front Page
 	## Page - Get Prim3d
 	## Archives
@@ -84,7 +84,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 		### Front Page - Max 550px
 		### Archives - Max 550px
 		### Archives - Prim3d Topics - Max 800px
-		### Single Post - Max 550px
+		### Single Post - Prim3d Topics - Max 550px
 		### Page - Resources - Max 550px
 		### Page - Get Prim3d - Max 550px
 		### Search Page - Max 550px
@@ -1669,7 +1669,7 @@ a {
 	margin: 80px 0;
 	padding: 0 100px;
 	font-weight: 700;
-	font-size: 16px;
+	font-size: 19px;
 }
 
 .page-navigation a {
@@ -2958,6 +2958,7 @@ a {
 	
 	.page-navigation {
 		padding: 0 35px;
+		font-size: 17px;
 	}
 	
 	/*--------------------------------------------------------------
