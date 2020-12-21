@@ -29,10 +29,10 @@
 				?>
 			</div>
 			<div class="footer__socials-cont">
-				<a href="#" class="footer__social_icon footer__social_icon-tw" target="_blank"></a>
-				<a href="#" class="footer__social_icon footer__social_icon-fb" target="_blank"></a>
-				<a href="#" class="footer__social_icon footer__social_icon-insta" target="_blank"></a>
-				<a href="#" class="footer__social_icon footer__social_icon-yt" target="_blank"></a>
+				<a href="https://twitter.com/GMSHAlliance" class="footer__social_icon footer__social_icon-tw" target="_blank"></a>
+				<a href="https://www.facebook.com/GMSHAlliance" class="footer__social_icon footer__social_icon-fb" target="_blank"></a>
+				<a href="https://www.instagram.com/gaymenssexualhealthalliance/" class="footer__social_icon footer__social_icon-insta" target="_blank"></a>
+				<a href="https://www.youtube.com/channel/UCnGJjn0Xn37GiXv0F3jBTTA" class="footer__social_icon footer__social_icon-yt" target="_blank"></a>
 			</div>
 		</div>
 		<div class="footer__bottom-row">
