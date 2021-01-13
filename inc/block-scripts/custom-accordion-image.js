@@ -15,12 +15,10 @@
 	
 	//If window is resize recalute the height of all slide panels
 	$(window).on( 'resize', function() {
-		console.log('resize test');
 		
 		//Clear timeout so the function only runs if the window stops being resized
 		clearTimeout(windowResizeTimer);
 		windowResizeTimer = setTimeout(function() {
-			console.log('running timer function');
 			slidePanelHeightsArray = [];
 			$slidePanel.each(function() {
 				$(this).css( 'height', 'auto' );
