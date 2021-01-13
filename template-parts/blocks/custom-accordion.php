@@ -22,7 +22,7 @@ $content = get_field('content');
 			<div class="block-custom-accordion__expand-icon-bar"></div>
 		</button>
     </div>
-	<div class="block-custom-accordion__slide-panel">
+	<div class="block-custom-accordion__slide-panel js--custom-accordion-slide-panel">
 		<div class="block-custom-accordion__content-cont">
 			<?php echo $content; ?>
 		</div>

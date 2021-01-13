@@ -76,13 +76,13 @@ Style sheet for ACF block "Custom Accordion"
 }
 
 .block-custom-accordion__slide-panel {
-	max-height: 600px;
-	transition: max-height 0.75s ease;
-	overflow: scroll;
+	height: 0;
+	transition: height 0.75s ease;
+	overflow: hidden;
 }
 
 .block-custom-accordion.closed .block-custom-accordion__slide-panel {
-	max-height: 0;
+
 }
 
 
