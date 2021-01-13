@@ -35,14 +35,14 @@ get_header();
 					if ( $prim3d_topics->have_posts() ) :
 						echo '<div class="front-page__topics-cont">';
 						echo '<h2 class="front-page__topics-header">Topics</h2>';
-						echo '<div class="front-page__topics-carousel-cont owl-carousel owl-theme">';
+						echo '<div class="front-page__topics-carousel-cont prim3d-topics-carousel__cont owl-carousel owl-theme">';
 						while ( $prim3d_topics->have_posts() ) :
 							$prim3d_topics->the_post();
 				?>
-				<div class="topics-carousel__item-cont">
-					<div class="topics-carousel__image-cont" style="background-image: url(<?php the_post_thumbnail_url(); ?>)"><a href="<?php the_permalink(); ?>"></a></div>
-					<div class="topics-carousel__copy-cont">
-						<a href="<?php the_permalink(); ?>" class="topics-carousel__title"><?php the_title(); ?></a>
+				<div class="prim3d-topics-carousel__item-cont">
+					<div class="prim3d-topics-carousel__image-cont" style="background-image: url(<?php the_post_thumbnail_url(); ?>)"><a href="<?php the_permalink(); ?>"></a></div>
+					<div class="prim3d-topics-carousel__copy-cont">
+						<a href="<?php the_permalink(); ?>" class="prim3d-topics-carousel__title"><?php the_title(); ?></a>
 					</div>
 				</div>
 				<?php
