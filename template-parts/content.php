@@ -30,16 +30,39 @@
 	<footer class="entry-footer">
 		<div class="page-navigation">
 			<?php
-				if ( get_previous_post() ) {
-					echo '<div class="page-navigation__prev">';
-					previous_post_link( '%link', '%title');
-					echo '</div>';
-				}
-				if ( get_next_post() ) {
-					echo '<div class="page-navigation__next">';
-					next_post_link( '%link', '%title' );
-					echo '</div>';
-				}
+//				if ( get_previous_post() ) {
+//					echo '<div class="page-navigation__prev">';
+//					previous_post_link( '%link', '%title');
+//					echo '</div>';
+//				}
+//				if ( get_next_post() ) {
+//					echo '<div class="page-navigation__next">';
+//					next_post_link( '%link', '%title' );
+//					echo '</div>';
+//				}
+			
+				$prim3d_topics = new WP_Query( array(
+					'post_type'	=> 'prim3d_topics'
+				) );
+
+				if ( $prim3d_topics->have_posts() ) :
+					echo '<div class="page-navigation__topics-carousel-cont">';
+					echo '<h2 class="page-navigation__topics-carousel-header">Prim3d Topics</h2>';
+					echo '<div class="prim3d-topics-carousel__cont owl-carousel owl-theme">';
+					while ( $prim3d_topics->have_posts() ) :
+						$prim3d_topics->the_post();
+			?>
+			<div class="prim3d-topics-carousel__item-cont">
+				<div class="prim3d-topics-carousel__image-cont" style="background-image: url(<?php the_post_thumbnail_url(); ?>)"><a href="<?php the_permalink(); ?>"></a></div>
+				<div class="prim3d-topics-carousel__copy-cont">
+					<a href="<?php the_permalink(); ?>" class="prim3d-topics-carousel__title"><?php the_title(); ?></a>
+				</div>
+			</div>
+			<?php
+					endwhile;
+					wp_reset_postdata();
+					echo '</div></div>';
+				endif;
 			?>
 		</div>
 	</footer><!-- .entry-footer -->

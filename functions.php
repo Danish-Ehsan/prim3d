@@ -167,6 +167,14 @@ function prim3d_scripts() {
 		wp_enqueue_style( 'owl-carousel-stylesheet', get_template_directory_uri() . '/inc/owl-carousel/owl.carousel.css', array(), '08172020', false );
 		wp_enqueue_style( 'owl-carousel-frontpage-theme', get_template_directory_uri() . '/inc/owl-carousel/owl.theme.frontpage.css', array(), time(), false );
 	}
+	
+	if ( is_singular( 'prim3d_topics' ) ) {
+		wp_enqueue_script( 'owl-carousel',  get_template_directory_uri() . '/inc/owl-carousel/owl.carousel.min.js', array(), '08172020' , true );
+		wp_enqueue_script( 'owl-carousel-single', get_template_directory_uri() . '/inc/owl-carousel/owl-carousel-single.js', array(), time(), true );
+		
+		wp_enqueue_style( 'owl-carousel-stylesheet', get_template_directory_uri() . '/inc/owl-carousel/owl.carousel.css', array(), '08172020', false );
+		wp_enqueue_style( 'owl-carousel-frontpage-theme', get_template_directory_uri() . '/inc/owl-carousel/owl.theme.single.css', array(), time(), false );
+	}
 }
 add_action( 'wp_enqueue_scripts', 'prim3d_scripts' );
 

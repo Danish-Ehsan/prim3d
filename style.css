@@ -1075,6 +1075,7 @@ a:visited {
 .site {
 	width: 100%;
 	position: relative;
+	overflow-x: hidden;
 }
 
 .site-main {
@@ -1646,67 +1647,6 @@ a {
 
 
 
-/*--------------------------------------------------------------
-## Single Post - Prim3d Topics
---------------------------------------------------------------*/
-
-.single-prim3d_topics .content-header {
-	padding: 20px 100px 0;
-}
-
-.single-prim3d_topics h2:first-of-type {
-	margin-top: 0;
-}
-
-.single-prim3d_topics.postid-209 .content-cont ul {
-	list-style-image: url("images/list-bullet-burgundy-sm.png");
-}
-
-.page-navigation {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	margin: 80px 0;
-	padding: 0 100px;
-	font-weight: 700;
-	font-size: 19px;
-}
-
-.page-navigation a {
-	display: flex;
-	align-items: center;
-	margin: 10px 0;
-}
-
-.page-navigation a, .page-navigation a:visited, .page-navigation a:hover {
-	color: #770524;
-}
-
-.page-navigation .page-navigation__prev a:before {
-	content: '';
-	display: inline-block;
-	width: 10px;
-	height: 25px;
-	margin-right: 10px;
-	background-image: url(images/maroon-arrow.png);
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
-	background-size: contain;
-}
-
-.page-navigation .page-navigation__next a:after {
-	content: '';
-	display: inline-block;
-	width: 10px;
-	height: 25px;
-	margin-left: 10px;
-	background-image: url(images/maroon-arrow.png);
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
-	background-size: contain;
-	transform: rotate(180deg);
-}
-
 
 
 /*--------------------------------------------------------------
@@ -1848,6 +1788,96 @@ a {
 .owl-nav .owl-next {
 	transform: rotate(180deg);
 }
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+## Single Post - Prim3d Topics
+--------------------------------------------------------------*/
+
+.single-prim3d_topics .content-header {
+	padding: 20px 100px 0;
+}
+
+.single-prim3d_topics h2:first-of-type {
+	margin-top: 0;
+}
+
+.single-prim3d_topics.postid-209 .content-cont ul {
+	list-style-image: url("images/list-bullet-burgundy-sm.png");
+}
+
+.page-navigation {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 80px 0;
+	font-weight: 700;
+	font-size: 19px;
+}
+
+.page-navigation a {
+	display: flex;
+	align-items: center;
+	margin: 10px 0;
+}
+
+.page-navigation__topics-carousel-header {
+	margin-bottom: 10px;
+}
+
+.page-navigation a, .page-navigation a:visited, .page-navigation a:hover {
+	
+}
+
+.page-navigation .page-navigation__prev a:before {
+	content: '';
+	display: inline-block;
+	width: 10px;
+	height: 25px;
+	margin-right: 10px;
+	background-image: url(images/maroon-arrow.png);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.page-navigation .page-navigation__next a:after {
+	content: '';
+	display: inline-block;
+	width: 10px;
+	height: 25px;
+	margin-left: 10px;
+	background-image: url(images/maroon-arrow.png);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	transform: rotate(180deg);
+}
+
+.page-navigation__topics-carousel-header {
+	font-size: 26px;
+}
+
+.page-navigation .owl-nav button {
+	background-image: url(images/maroon-arrow.png) !important;
+}
+
+.page-navigation__topics-carousel-cont {
+	width: 100%;
+}
+
+.page-navigation__topics-carousel-cont .owl-nav button {
+	background-image: url(images/maroon-arrow.png);
+}
+
+
 
 
 
@@ -2435,6 +2465,7 @@ a {
 	
 	.prim3d-topics-carousel__item-cont {
 		width: 400px;
+		width: 100%;
 	}
 	
 	.prim3d-topics-carousel__copy-cont {
@@ -2490,6 +2521,25 @@ a {
 		padding-top: 33px;
 	}
 	
+	.page-navigation {
+		padding: 0 100px;
+	}
+	
+	.page-navigation__topics-carousel-header {
+		padding: 0;
+	}
+	
+	.page-navigation .prim3d-topics-carousel__item-cont {
+		width: 100%;
+	}
+	
+	.page-navigation .prim3d-topics-carousel__copy-cont {
+		padding: 30px 20px;
+	}
+	
+	.page-navigation .prim3d-topics-carousel__title {
+		font-size: 24px;
+	}
 	
 	
 	
