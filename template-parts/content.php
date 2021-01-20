@@ -16,6 +16,7 @@
 
 	<div class="content-cont">
 		<?php
+		$current_post_ID = get_the_ID();
 		the_content();
 
 		wp_link_pages(
@@ -44,13 +45,16 @@
 				$prim3d_topics = new WP_Query( array(
 					'post_type'	=> 'prim3d_topics'
 				) );
+				
+				$section_title = (get_language_attributes() == 'lang="en-US"') ? 'Prim3d Topics' : 'Sujets Prim3d';
 
 				if ( $prim3d_topics->have_posts() ) :
 					echo '<div class="page-navigation__topics-carousel-cont">';
-					echo '<h2 class="page-navigation__topics-carousel-header">Prim3d Topics</h2>';
+					echo "<h2 class=\"page-navigation__topics-carousel-header\">$section_title</h2>";
 					echo '<div class="prim3d-topics-carousel__cont owl-carousel owl-theme">';
 					while ( $prim3d_topics->have_posts() ) :
 						$prim3d_topics->the_post();
+						if (get_the_ID() != $current_post_ID) :
 			?>
 			<div class="prim3d-topics-carousel__item-cont">
 				<div class="prim3d-topics-carousel__image-cont" style="background-image: url(<?php the_post_thumbnail_url(); ?>)"><a href="<?php the_permalink(); ?>"></a></div>
@@ -59,6 +63,7 @@
 				</div>
 			</div>
 			<?php
+						endif;
 					endwhile;
 					wp_reset_postdata();
 					echo '</div></div>';

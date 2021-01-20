@@ -32,9 +32,11 @@ get_header();
 						'post_type'	=> 'prim3d_topics'
 					) );
 					
+					$section_title = (get_language_attributes() == 'lang="en-US"') ? 'Topics' : 'Les Sujets';
+					
 					if ( $prim3d_topics->have_posts() ) :
 						echo '<div class="front-page__topics-cont">';
-						echo '<h2 class="front-page__topics-header">Topics</h2>';
+						echo "<h2 class=\"front-page__topics-header\">$section_title</h2>";
 						echo '<div class="front-page__topics-carousel-cont prim3d-topics-carousel__cont owl-carousel owl-theme">';
 						while ( $prim3d_topics->have_posts() ) :
 							$prim3d_topics->the_post();

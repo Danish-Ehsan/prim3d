@@ -1094,10 +1094,12 @@ a {
 }
 
 .content-cont ul {
-	margin-left: 80px;
+	margin-left: 80px;	
 }
 
-
+.content-cont>ul {
+	margin-right: 100px;
+}
 
 
 
@@ -1139,8 +1141,12 @@ a {
 }
 
 .header__menu-list li {
-	padding: 20px 40px 40px 40px;;
+	padding: 20px 30px 40px;
 	position: static;
+}
+
+html[lang="fr-FR"] .header__menu-list li {
+	padding: 20px 15px 40px;
 }
 
 .header__menu-list li.menu-item-has-children>a:after {
@@ -1809,7 +1815,7 @@ a {
 	margin-top: 0;
 }
 
-.single-prim3d_topics.postid-209 .content-cont ul {
+.single-prim3d_topics.postid-209 .content-cont ul, .single-prim3d_topics.postid-400 .content-cont ul {
 	list-style-image: url("images/list-bullet-burgundy-sm.png");
 }
 
@@ -2047,11 +2053,11 @@ a {
 ## Page - Resources
 --------------------------------------------------------------*/
 
-.page-id-26 .content-header {
+.page-id-26 .content-header, .page-id-429 .content-header {
 	margin-bottom: 0;
 }
 
-.page-id-26 .content-cont h2 {
+.page-id-26 .content-cont h2, .page-id-429 .content-cont h2 {
 	margin: 70px 0 28px;
 }
 
@@ -2120,7 +2126,7 @@ a {
 ## Page - Contact Us
 --------------------------------------------------------------*/
 
-.page-id-28 .content-header {
+.page-id-28 .content-header, .page-id-445 .content-header {
 	border-radius: 0;
 	background-color: #770524;
 	position: relative;
@@ -2129,7 +2135,7 @@ a {
 	color: #fff;
 }
 
-.page-id-28 .content-header:before {
+.page-id-28 .content-header:before, .page-id-445 .content-header:before {
 	content: "";
 	display: block;
 	width: 100%;
@@ -2142,11 +2148,11 @@ a {
 	border-radius: 6px 6px 0 0;
 }
 
-.page-id-28 h1 {
+.page-id-28 h1, .page-id-445 h1 {
 	font-size: 40px;
 }
 
-.page-id-28 h3 {
+.page-id-28 h3, .page-id-445 h3 {
 	background-color: #770524;
 	margin: 0;
 	color: #fff;
@@ -2203,7 +2209,7 @@ a {
 
 
 
-.page-id-28 .wp-block-column p {
+.page-id-28 .wp-block-column p, .page-id-445 .wp-block-column p {
 	padding: 0;
 }
 
@@ -2242,6 +2248,10 @@ a {
 		right: 50px;
 	}
 	
+	html[lang="fr-FR"] .footer__menu-list a {
+		padding: 0 12px;
+	}
+	
 } 
 
 
@@ -2252,11 +2262,23 @@ a {
 	}
 	
 	.header__menu-list li {
-		padding: 20px 20px 40px 20px;
+		padding: 20px 12px 40px;
+	}
+	
+	html[lang="fr-FR"] .header__menu-list li {
+		padding: 20px 2px 40px;
 	}
 	
 	.sub-menu a {
 		padding: 0 20px;
+	}
+	
+	.footer__menu-list a {
+		padding: 0 12px;
+	}
+	
+	html[lang="fr-FR"] .footer__nav {
+		display: none;
 	}
 } 
 
@@ -2310,6 +2332,10 @@ a {
 
 	.header__menu-list li {
 		padding-bottom: 30px;
+	}
+	
+	html[lang="fr-FR"] .header__menu-list li {
+		padding: 20px 12px 30px;
 	}
 
 	.header__menu-list li.menu-item-has-children>a:after {
@@ -2586,27 +2612,27 @@ a {
 	### Page - Contact Us - Max 1024px
 	--------------------------------------------------------------*/
 	
-	.page-id-28 .site-main {
+	.page-id-28 .site-main, .page-id-445 .site-main {
 		margin-top: 0;
 	}
 	
-	.page-id-28 .content-header:before {
+	.page-id-28 .content-header:before, .page-id-445 .content-header:before {
 		border-radius: 0;
 	}
 	
-	.page-id-28 .content-header {
+	.page-id-28 .content-header, .page-id-445 .content-header {
 		margin-top: 28px;
 		padding-top: 80px;
 	}
 	
-	.page-id-28 .wpforms-submit-container {
+	.page-id-28 .wpforms-submit-container, .page-id-445 .wpforms-submit-container {
 		border-radius: 0 !important;
 	}
 	
 	
 	
 	
-	.page-id-28 .wp-block-columns {
+	.page-id-28 .wp-block-columns, .page-id-445 .wp-block-columns {
 		padding: 0 40px;
 	}
 	
@@ -2684,15 +2710,15 @@ a {
 	### Page - Contact Us - Max 800px
 	--------------------------------------------------------------*/
 	
-	.page-id-28 .site-main {
+	.page-id-28 .site-main, .page-id-445 .site-main {
 		margin-bottom: 0;
 	}
 	
-	.page-id-28 .wpforms-container {
+	.page-id-28 .wpforms-container,  .page-id-445 .wpforms-container {
 		margin-bottom: 0 !important;
 	}
 	
-	 .page-id-28 .wpforms-submit-container {
+	.page-id-28 .wpforms-submit-container, .page-id-445 .wpforms-submit-container {
 		padding-left: 0 !important;
 		padding-right: 0 !important;
 		text-align: center !important;
@@ -2702,15 +2728,15 @@ a {
 	
 	
 	
-	.page-id-28 .wp-block-columns {
+	.page-id-28 .wp-block-columns, .page-id-445 .wp-block-columns {
 		display: block;
 	}
 	
-	.page-id-28 .wp-block-column {
+	.page-id-28 .wp-block-column, .page-id-445 .wp-block-column {
 		margin: 40px 0;
 	}
 	
-	.page-id-28 .wp-block-column p {
+	.page-id-28 .wp-block-column p, .page-id-445 .wp-block-column p {
 		text-align: center !important;
 	}
 	
@@ -2821,7 +2847,7 @@ a {
 		padding-top: 0;
 	}
 	
-	.header__menu-list li {
+	.header__menu-list li, html[lang="fr-FR"] .header__menu-list li  {
 		padding-left: 0px;
 		padding-right: 0px;
 	}
@@ -3015,15 +3041,15 @@ a {
 	### Page - Resources - Max 550px
 	--------------------------------------------------------------*/
 
-	.page-id-26 .site-main {
+	.page-id-26 .site-main, .page-id-429 .site-main {
 		margin-bottom: 20px;
 	}
 	
-	.page-id-26 .content-header {
+	.page-id-26 .content-header, .page-id-429 .site-main {
 		margin-bottom: 8px;
 	}
 	
-	.page-id-26 .content-cont figure {
+	.page-id-26 .content-cont figure, .page-id-429 .site-main {
 		margin-top: 0;
 	}
 	
@@ -3094,25 +3120,25 @@ a {
 	### Page - Contact Us - Max 550px
 	--------------------------------------------------------------*/
 	
-	.page-id-28 .site-main {
+	.page-id-28 .site-main, .page-id-445 .site-main {
 		margin-top: 0;
 	}
 	
-	.page-id-28 .content-header {
+	.page-id-28 .content-header, .page-id-445 .content-header {
 		text-align: left;
 		padding: 50px 50px 10px;
 	}
 
-	.page-id-28 .content-header:before {
+	.page-id-28 .content-header:before, .page-id-445 .content-header:before {
 		
 	}
 
-	.page-id-28 h1 {
+	.page-id-28 h1, .page-id-445 h1 {
 		font-size: 24px;
 		text-align: left;
 	}
 
-	.page-id-28 h3 {
+	.page-id-28 h3, .page-id-445 h3 {
 		font-size: 16px;
 		text-align: left;
 		padding: 0 50px;

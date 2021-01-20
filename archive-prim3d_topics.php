@@ -12,15 +12,17 @@ get_header();
 
 	<main id="primary" class="site-main prim3d-topics-archive">
 
-		<?php if ( have_posts() ) : ?>
+		<?php 
+			if ( have_posts() ) : 
+				$page_title = (get_language_attributes() == 'lang="en-US"') ? 'PRIM3D Topics' : 'Sujets PRIM3D';
+				$page_subtitle = (get_language_attributes() == 'lang="en-US"') ? 'Explore various sections of the online PRIM3D guide in detail.' : 'Explore diverses rubriques de la version numérique du guide en détail';
+		?>
 
 			<header class="page-header prim3d-topics-archive__header">
 				<?php
-				echo '<h1 class="page-title">';
-				post_type_archive_title();
-				echo '</h1>';
+				echo "<h1 class=\"page-title\">$page_title</h1>";
+				echo "<span class=\"prim3d-topics-archive__subheader\">$page_subtitle</span>";
 				?>
-				<span class="prim3d-topics-archive__subheader">Explore various sections of the online PRIM3D guide in detail.</span>
 			</header><!-- .page-header -->
 			<div class="prim3d-topics-archive__all-articles-cont">
 			<?php
