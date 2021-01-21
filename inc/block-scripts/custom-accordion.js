@@ -15,11 +15,9 @@
 	
 	//If window is resize recalute the height of all slide panels
 	$(window).on( 'resize', function() {
-		console.log('resize test');
 		//Clear timeout so the function only runs if the window stops being resized
 		clearTimeout(windowResizeTimer);
 		windowResizeTimer = setTimeout(function() {
-			console.log('resize function test');
 			slidePanelHeightsArray = [];
 			$slidePanel.each(function() {
 				$(this).css( 'height', 'auto' );
@@ -30,7 +28,6 @@
 	});
 	
 	$accordionHeader.on( 'click', function() {
-		console.log('event test');
 		if ( !$(this).parent().hasClass('open') ) {
 			$(this).parent('.js--custom-accordion').removeClass('open closed').addClass('open');
 			$slidePanel.eq( ($(this).parent().index('.js--custom-accordion')) ).css( 'height', slidePanelHeightsArray[($(this).parent().index('.js--custom-accordion'))] + 'px' );
