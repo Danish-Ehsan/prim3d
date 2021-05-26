@@ -31,16 +31,16 @@
 	<footer class="entry-footer">
 		<div class="page-navigation">
 			<?php
-//				if ( get_previous_post() ) {
-//					echo '<div class="page-navigation__prev">';
-//					previous_post_link( '%link', '%title');
-//					echo '</div>';
-//				}
-//				if ( get_next_post() ) {
-//					echo '<div class="page-navigation__next">';
-//					next_post_link( '%link', '%title' );
-//					echo '</div>';
-//				}
+				if ( get_previous_post() ) {
+					echo '<div class="page-navigation__prev">';
+					previous_post_link( '%link', '%title');
+					echo '</div>';
+				}
+				if ( get_next_post() ) {
+					echo '<div class="page-navigation__next">';
+					next_post_link( '%link', '%title' );
+					echo '</div>';
+				}
 			
 				$prim3d_topics = new WP_Query( array(
 					'post_type'	=> 'prim3d_topics'
