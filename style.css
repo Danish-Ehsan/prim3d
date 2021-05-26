@@ -1592,6 +1592,12 @@ html[lang="fr-FR"] .header__menu-list li {
 .content-cont figure {
 	margin: 40px 0;
 	border-radius: 0;
+	padding: 0 100px;
+}
+
+.content-cont figure * {
+	margin: 0 auto;
+	text-align: center;
 }
 
 .content-cont a {
@@ -1876,6 +1882,7 @@ html[lang="fr-FR"] .header__menu-list li {
 }
 
 .page-navigation__topics-carousel-cont {
+	margin-top: 100px;
 	width: 100%;
 }
 
@@ -2791,6 +2798,10 @@ html[lang="fr-FR"] .header__menu-list li {
 		padding: 0 50px 0 70px;
 	}
 	
+	.content-cont figure {
+		padding: 0 35px;
+	}
+	
 	.site-main {
 		margin-top: 0;
 	}
@@ -2803,6 +2814,10 @@ html[lang="fr-FR"] .header__menu-list li {
 		padding-left: 0;
 		padding-right: 0;
 		text-align: left;
+	}
+	
+	.content-cont>ul {
+		margin-right: 0;
 	}
 	
 	
@@ -3035,6 +3050,10 @@ html[lang="fr-FR"] .header__menu-list li {
 	.page-navigation {
 		padding: 0 35px;
 		font-size: 17px;
+	}
+	
+	.page-navigation__topics-carousel-cont {
+		margin-top: 50px;
 	}
 	
 	/*--------------------------------------------------------------
