@@ -36,7 +36,7 @@
 			</div>
 		</div>
 		<div class="footer__bottom-row">
-			<span class="footer__copyright-info">&#169; 2020 Gay Men’s Sexual Health Alliance</span>
+			<span class="footer__copyright-info">&#169; 2021 Gay Men’s Sexual Health Alliance</span>
 			<a href="<?php echo get_privacy_policy_url(); ?>" class="footer__privacy-link">Privacy Policy</a>
 		</div>
 	</footer><!-- #colophon -->
